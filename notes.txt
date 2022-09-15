@@ -1,3 +1,314 @@
 unix timestamp mid June 2022 onwards... 1655164800
 
+query HistoryQuery {
+  poolHourDatas(
+    first: 3
+    orderBy: periodStartUnix
+    orderDirection: asc
+    where: {pool: "0x5777d92f208679db4b9778590fa3cab3ac9e2168", periodStartUnix_gt: 1655164800}
+  ) {
+    id
+    periodStartUnix
+    tick
+    volumeToken0
+    volumeToken1
+    token0Price
+    token1Price
+    volumeUSD
+    tvlUSD
+    txCount
+    sqrtPrice
+    open
+    low
+    liquidity
+    high
+    feesUSD
+    close
+  }
+}
 
+{
+  "data": {
+    "poolHourDatas": [
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168-459769",
+        "periodStartUnix": 1655168400,
+        "tick": "-276324",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "token0Price": "0.999956087221430249462604187207974",
+        "token1Price": "1.000043914706986554393435781831191",
+        "volumeUSD": "0",
+        "tvlUSD": "631064386.018964828508204789",
+        "txCount": "98",
+        "sqrtPrice": "79229902135936753270935",
+        "open": "0.9999547133837153985028730154710006",
+        "low": "0.9999545492064235254127406514218033",
+        "liquidity": "3153691106215902970423635",
+        "high": "0.999956717522427019152090934702693",
+        "feesUSD": "0",
+        "close": "0.999956087221430249462604187207974"
+      },
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168-459770",
+        "periodStartUnix": 1655172000,
+        "tick": "-276324",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "token0Price": "0.9999537626878576533482401777116331",
+        "token1Price": "1.000046239450130235613935442587292",
+        "volumeUSD": "0",
+        "tvlUSD": "617419568.9378026742400787550000001",
+        "txCount": "107",
+        "sqrtPrice": "79229994226424987338739",
+        "open": "0.9999560592590779803727391702922396",
+        "low": "0.9999537551000165514666907758116535",
+        "liquidity": "3085454137186020969830698",
+        "high": "0.9999561237404833856175244920941467",
+        "feesUSD": "0",
+        "close": "0.9999537626878576533482401777116331"
+      },
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168-459771",
+        "periodStartUnix": 1655175600,
+        "tick": "-276324",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "token0Price": "0.9999466366265208740032548764194969",
+        "token1Price": "1.000053366221280723369667972636823",
+        "volumeUSD": "0",
+        "tvlUSD": "617425661.4390264165812938600000001",
+        "txCount": "103",
+        "sqrtPrice": "79230276539886526249209",
+        "open": "0.9999537663090822368477776680563149",
+        "low": "0.9999466366265208740032548764194969",
+        "liquidity": "3085474539209351770888983",
+        "high": "0.9999537663090822368477776680563149",
+        "feesUSD": "0",
+        "close": "0.9999466366265208740032548764194969"
+      }
+    ]
+  }
+}
+
+query TicksQuery {
+  ticks(first: 3, where: {pool: "0x5777d92f208679db4b9778590fa3cab3ac9e2168"}) {
+    id
+    liquidityGross
+    liquidityNet
+    price0
+    price1
+    volumeToken0
+    volumeToken1
+    volumeUSD
+    untrackedVolumeUSD
+    feesUSD
+    collectedFeesToken0
+    collectedFeesToken1
+    collectedFeesUSD
+    createdAtTimestamp
+    createdAtBlockNumber
+  }
+}
+
+{
+  "data": {
+    "ticks": [
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-254218",
+        "liquidityGross": "0",
+        "liquidityNet": "0",
+        "price0": "0.000000000009120203534308227991484808095711512",
+        "price1": "109646675782.8612978573535762324127",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "volumeUSD": "0",
+        "untrackedVolumeUSD": "0",
+        "feesUSD": "0",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "collectedFeesUSD": "0",
+        "createdAtTimestamp": "1650828457",
+        "createdAtBlockNumber": "14649285"
+      },
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-262460",
+        "liquidityGross": "0",
+        "liquidityNet": "0",
+        "price0": "0.000000000004000155872351152427378106265698406",
+        "price1": "249990258357.6661469547918695185509",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "volumeUSD": "0",
+        "untrackedVolumeUSD": "0",
+        "feesUSD": "0",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "collectedFeesUSD": "0",
+        "createdAtTimestamp": "1643109947",
+        "createdAtBlockNumber": "14074487"
+      },
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-262461",
+        "liquidityGross": "0",
+        "liquidityNet": "0",
+        "price0": "0.000000000003999755896761476279750131252573148",
+        "price1": "250015257383.5019135694873487055028",
+        "volumeToken0": "0",
+        "volumeToken1": "0",
+        "volumeUSD": "0",
+        "untrackedVolumeUSD": "0",
+        "feesUSD": "0",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "collectedFeesUSD": "0",
+        "createdAtTimestamp": "1643186364",
+        "createdAtBlockNumber": "14080206"
+      }
+    ]
+  }
+}
+
+
+query listPositions {
+  positions(first: 3, where: {pool: "0x5777d92f208679db4b9778590fa3cab3ac9e2168", liquidity_gt: 0}) {
+    id
+    owner
+    pool {
+      id
+      token0 {
+        symbol
+      }
+      token1 {
+        symbol
+      }
+    }
+    tickLower {
+      tickIdx
+      price0
+      price1
+  		
+    }
+    tickUpper {
+      tickIdx
+      price0
+      price1
+    }
+    liquidity
+    depositedToken0
+    depositedToken1
+    withdrawnToken0
+    withdrawnToken1
+    collectedFeesToken0
+    collectedFeesToken1
+    transaction {
+      id
+    }
+  }
+}
+
+{
+  "data": {
+    "positions": [
+      {
+        "id": "155929",
+        "owner": "0xce9cde38b04b7030510190f6a5048808a2e7c7df",
+        "pool": {
+          "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+          "token0": {
+            "symbol": "DAI"
+          },
+          "token1": {
+            "symbol": "USDC"
+          }
+        },
+        "tickLower": {
+          "tickIdx": "-276327",
+          "price0": "0.0000000000009997027030279614885134077713916109",
+          "price1": "1000297385383.812647497261689312446"
+        },
+        "tickUpper": {
+          "tickIdx": "-276322",
+          "price0": "0.000000000001000202654359743298945441482514242",
+          "price1": "999797386700.725141078509750945635"
+        },
+        "liquidity": "806762927645688371598",
+        "depositedToken0": "796719.983319161671926788",
+        "depositedToken1": "1215565.509603",
+        "withdrawnToken0": "626100.625652228878158927",
+        "withdrawnToken1": "1184527.854138",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "transaction": {
+          "id": "0x6891867c222c084dcc8e166d0cf9bf81925198f06cd1abaab8a3f1e6108d767f"
+        }
+      },
+      {
+        "id": "159842",
+        "owner": "0x16138817910586ded9176737b23b011376b55169",
+        "pool": {
+          "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+          "token0": {
+            "symbol": "DAI"
+          },
+          "token1": {
+            "symbol": "USDC"
+          }
+        },
+        "tickLower": {
+          "tickIdx": "-276326",
+          "price0": "0.0000000000009998026732982642846622591121687497",
+          "price1": "1000197365647.247922704991190193427"
+        },
+        "tickUpper": {
+          "tickIdx": "-276320",
+          "price0": "0.00000000000100040270489264179120266356026516",
+          "price1": "999597457213.30790736395788572891"
+        },
+        "liquidity": "92135557797451555633",
+        "depositedToken0": "34287.074205533331556357",
+        "depositedToken1": "33120.703124",
+        "withdrawnToken0": "24496.884344079042407666",
+        "withdrawnToken1": "15273.425836",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "transaction": {
+          "id": "0x44e1bd1c89a9517f4b9c49369f36926c9176ff84502f9fde6f2d5a9ff7b87f98"
+        }
+      },
+      {
+        "id": "160680",
+        "owner": "0x443930c2f4a6bea90790f077cae99c35aad0aa48",
+        "pool": {
+          "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+          "token0": {
+            "symbol": "DAI"
+          },
+          "token1": {
+            "symbol": "USDC"
+          }
+        },
+        "tickLower": {
+          "tickIdx": "-276326",
+          "price0": "0.0000000000009998026732982642846622591121687497",
+          "price1": "1000197365647.247922704991190193427"
+        },
+        "tickUpper": {
+          "tickIdx": "-276322",
+          "price0": "0.000000000001000202654359743298945441482514242",
+          "price1": "999797386700.725141078509750945635"
+        },
+        "liquidity": "5006531735447920294620",
+        "depositedToken0": "491379.686848295019258518",
+        "depositedToken1": "509827.593255",
+        "withdrawnToken0": "0",
+        "withdrawnToken1": "0",
+        "collectedFeesToken0": "0",
+        "collectedFeesToken1": "0",
+        "transaction": {
+          "id": "0x9ff2077e8dc7e868d370a13c2d2ccfb23ebc470199385887e153587bed467e2f"
+        }
+      }
+    ]
+  }
+}
