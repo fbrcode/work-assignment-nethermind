@@ -1,0 +1,2690 @@
+{
+  "data": {
+    "pools": [
+      {
+        "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+        "feeTier": "100",
+        "totalValueLockedUSD": "888291903.684998664399704488",
+        "tick": "-276324",
+        "token0": {
+          "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+          "symbol": "DAI",
+          "name": "Dai Stablecoin"
+        },
+        "token1": {
+          "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "name": "USD Coin"
+        },
+        "ticks": [
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-254218",
+            "tickIdx": "-254218",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000009120203534308227991484808095711512",
+            "price1": "109646675782.8612978573535762324127",
+            "createdAtTimestamp": "1650828457",
+            "createdAtBlockNumber": "14649285"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-262460",
+            "tickIdx": "-262460",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000004000155872351152427378106265698406",
+            "price1": "249990258357.6661469547918695185509",
+            "createdAtTimestamp": "1643109947",
+            "createdAtBlockNumber": "14074487"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-262461",
+            "tickIdx": "-262461",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000003999755896761476279750131252573148",
+            "price1": "250015257383.5019135694873487055028",
+            "createdAtTimestamp": "1643186364",
+            "createdAtBlockNumber": "14080206"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276123",
+            "tickIdx": "-276123",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001020305037432828869073816099419705",
+            "price1": "980099052060.0407814281263216115685",
+            "createdAtTimestamp": "1643327980",
+            "createdAtBlockNumber": "14090825"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276124",
+            "tickIdx": "-276124",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001020203017131115757498066292790426",
+            "price1": "980197061965.2467855062691342437296",
+            "createdAtTimestamp": "1643350256",
+            "createdAtBlockNumber": "14092463"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276126",
+            "tickIdx": "-276126",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001019999007129699746251818466578926",
+            "price1": "980393111179.6104545158382431332693",
+            "createdAtTimestamp": "1657865841",
+            "createdAtBlockNumber": "15145585"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276224",
+            "tickIdx": "-276224",
+            "liquidityGross": "36004315926487067",
+            "liquidityNet": "-36004315926487067",
+            "price0": "0.000000000001010052332493434924284017410706512",
+            "price1": "990047711222.4279113642960719813252",
+            "createdAtTimestamp": "1643958124",
+            "createdAtBlockNumber": "14138048"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276254",
+            "tickIdx": "-276254",
+            "liquidityGross": "3220686226852915",
+            "liquidityNet": "-3220686226852915",
+            "price0": "0.000000000001007026867233571470068104661925687",
+            "price1": "993022165085.9473574409243249535026",
+            "createdAtTimestamp": "1637370468",
+            "createdAtBlockNumber": "13648914"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276274",
+            "tickIdx": "-276274",
+            "liquidityGross": "39896136276282544",
+            "liquidityNet": "-39896136276282544",
+            "price0": "0.000000000001005014926705595436530869448605809",
+            "price1": "995010097290.7594568894031535398714",
+            "createdAtTimestamp": "1657039291",
+            "createdAtBlockNumber": "15083651"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276286",
+            "tickIdx": "-276286",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001003809692339503259701514342857941",
+            "price1": "996204766333.1240624240943961214217",
+            "createdAtTimestamp": "1652550798",
+            "createdAtBlockNumber": "14775020"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276287",
+            "tickIdx": "-276287",
+            "liquidityGross": "4344564227043297",
+            "liquidityNet": "-4344564227043297",
+            "price0": "0.000000000001003709321407362523449169425915349",
+            "price1": "996304386809.7573748303368055610343",
+            "createdAtTimestamp": "1662272895",
+            "createdAtBlockNumber": "15470078"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276289",
+            "tickIdx": "-276289",
+            "liquidityGross": "3802373718301130",
+            "liquidityNet": "-3802373718301130",
+            "price0": "0.000000000001003508609650346357674171014970645",
+            "price1": "996503657650.1631944028766212255143",
+            "createdAtTimestamp": "1655941477",
+            "createdAtBlockNumber": "15010150"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276304",
+            "tickIdx": "-276304",
+            "liquidityGross": "8131661916125001172",
+            "liquidityNet": "-8131661916125001172",
+            "price0": "0.000000000001002004550264123520976509648198178",
+            "price1": "997999459919.0241887759215412623238",
+            "createdAtTimestamp": "1639885559",
+            "createdAtBlockNumber": "13833234"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276305",
+            "tickIdx": "-276305",
+            "liquidityGross": "486335717016983",
+            "liquidityNet": "-486335717016983",
+            "price0": "0.000000000001001904359828140706905819066291549",
+            "price1": "998099259865.0160911947991334164498",
+            "createdAtTimestamp": "1650928269",
+            "createdAtBlockNumber": "14656632"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276306",
+            "tickIdx": "-276306",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001001804179410199686937125353756173",
+            "price1": "998199069791.0025928039186133297919",
+            "createdAtTimestamp": "1660259134",
+            "createdAtBlockNumber": "15323485"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276309",
+            "tickIdx": "-276309",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001001503698254610852344841720042564",
+            "price1": "998498559458.9101863816285756241529",
+            "createdAtTimestamp": "1636771503",
+            "createdAtBlockNumber": "13605124"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276311",
+            "tickIdx": "-276311",
+            "liquidityGross": "104149104628278639",
+            "liquidityNet": "-104149104628278639",
+            "price0": "0.000000000001001303427556065363711445793769352",
+            "price1": "998698269155.7875630080067651555637",
+            "createdAtTimestamp": "1636856262",
+            "createdAtBlockNumber": "13611293"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276312",
+            "tickIdx": "-276312",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001001203307225342829428502943475005",
+            "price1": "998798138982.7031417643075658320787",
+            "createdAtTimestamp": "1656277261",
+            "createdAtBlockNumber": "15030877"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276313",
+            "tickIdx": "-276313",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001001103196905652264202082735201485",
+            "price1": "998898018796.6014120784839965886618",
+            "createdAtTimestamp": "1652871977",
+            "createdAtBlockNumber": "14798488"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276314",
+            "tickIdx": "-276314",
+            "liquidityGross": "218734151463881796059",
+            "liquidityNet": "-218734151463881796059",
+            "price0": "0.000000000001001003096595992664935589176283856",
+            "price1": "998997908598.4810722196918449883213",
+            "createdAtTimestamp": "1637447080",
+            "createdAtBlockNumber": "13654495"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276315",
+            "tickIdx": "-276315",
+            "liquidityGross": "30914379000797379548",
+            "liquidityNet": "-30914379000797379548",
+            "price0": "0.000000000001000903006295363128622726903593497",
+            "price1": "999097808389.3409203269138141728198",
+            "createdAtTimestamp": "1643176252",
+            "createdAtBlockNumber": "14079481"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276316",
+            "tickIdx": "-276316",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001000802926002762852337493154278069",
+            "price1": "999197718170.1798544189465055542372",
+            "createdAtTimestamp": "1637337984",
+            "createdAtBlockNumber": "13646496"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276317",
+            "tickIdx": "-276317",
+            "liquidityGross": "938321967576983678",
+            "liquidityNet": "-938321967576983678",
+            "price0": "0.000000000001000702855717191133224170737204349",
+            "price1": "999297637941.9968724043884002047922",
+            "createdAtTimestamp": "1645448389",
+            "createdAtBlockNumber": "14249565"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276318",
+            "tickIdx": "-276318",
+            "liquidityGross": "771298533568235915",
+            "liquidityNet": "-771298533568235915",
+            "price0": "0.000000000001000602795437647368487322005003848",
+            "price1": "999397567705.7910720916288390448133",
+            "createdAtTimestamp": "1643584103",
+            "createdAtBlockNumber": "14110061"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276319",
+            "tickIdx": "-276319",
+            "liquidityGross": "3422095564864445017",
+            "liquidityNet": "-3422095564864445017",
+            "price0": "0.000000000001000502745163131055381783826621186",
+            "price1": "999497507462.5616511988380019287177",
+            "createdAtTimestamp": "1637115869",
+            "createdAtBlockNumber": "13630282"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276320",
+            "tickIdx": "-276320",
+            "liquidityGross": "112417139491013958844",
+            "liquidityNet": "-112417139491013958844",
+            "price0": "0.00000000000100040270489264179120266356026516",
+            "price1": "999597457213.30790736395788572891",
+            "createdAtTimestamp": "1638079158",
+            "createdAtBlockNumber": "13700697"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276321",
+            "tickIdx": "-276321",
+            "liquidityGross": "51378619850100080641",
+            "liquidityNet": "-51378619850100080641",
+            "price0": "0.000000000001000302674625179273275336026662493",
+            "price1": "999697416959.0292381546942815174837",
+            "createdAtTimestamp": "1637512349",
+            "createdAtBlockNumber": "13659267"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276322",
+            "tickIdx": "-276322",
+            "liquidityGross": "4429920778920704658606193",
+            "liquidityNet": "-4429920778920704658606193",
+            "price0": "0.000000000001000202654359743298945441482514242",
+            "price1": "999797386700.725141078509750945635",
+            "createdAtTimestamp": "1637288554",
+            "createdAtBlockNumber": "13643043"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276323",
+            "tickIdx": "-276323",
+            "liquidityGross": "3191166264483632444242",
+            "liquidityNet": "-3189445628417801816024",
+            "price0": "0.000000000001000102644095333765568884594054836",
+            "price1": "999897366439.3952135926176019207301",
+            "createdAtTimestamp": "1637140693",
+            "createdAtBlockNumber": "13632088"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276324",
+            "tickIdx": "-276324",
+            "liquidityGross": "400029470945266959",
+            "liquidityNet": "-400029470945160607",
+            "price0": "0.000000000001000002643830950670501834410613775",
+            "price1": "999997356176.0391531139768636809218",
+            "createdAtTimestamp": "1637158605",
+            "createdAtBlockNumber": "13633439"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276325",
+            "tickIdx": "-276325",
+            "liquidityGross": "256034120575246524610",
+            "liquidityNet": "256034120575246524610",
+            "price0": "0.0000000000009999026535655941110907253380799669",
+            "price1": "1000097355911.65675702928826136729",
+            "createdAtTimestamp": "1637180386",
+            "createdAtBlockNumber": "13635099"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276326",
+            "tickIdx": "-276326",
+            "liquidityGross": "4429229484649614636897081",
+            "liquidityNet": "4429229484649614636897081",
+            "price0": "0.0000000000009998026732982642846622591121687497",
+            "price1": "1000197365647.247922704991190193427",
+            "createdAtTimestamp": "1637145087",
+            "createdAtBlockNumber": "13632420"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276327",
+            "tickIdx": "-276327",
+            "liquidityGross": "818306911719813768432",
+            "liquidityNet": "818306911719813768432",
+            "price0": "0.0000000000009997027030279614885134077713916109",
+            "price1": "1000297385383.812647497261689312446",
+            "createdAtTimestamp": "1637140693",
+            "createdAtBlockNumber": "13632088"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276328",
+            "tickIdx": "-276328",
+            "liquidityGross": "2099893169768535363",
+            "liquidityNet": "2099893169768535363",
+            "price0": "0.0000000000009996027427536861199014176296286483",
+            "price1": "1000397415122.351028762011415481377",
+            "createdAtTimestamp": "1639012128",
+            "createdAtBlockNumber": "13768088"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276329",
+            "tickIdx": "-276329",
+            "liquidityGross": "2968741959566583198007",
+            "liquidityNet": "2968741959566583198007",
+            "price0": "0.0000000000009995027924744386760338142482038281",
+            "price1": "1000497454863.863263864887616622925",
+            "createdAtTimestamp": "1637115869",
+            "createdAtBlockNumber": "13630282"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276330",
+            "tickIdx": "-276330",
+            "liquidityGross": "4159486373252918635",
+            "liquidityNet": "4159486373252918635",
+            "price0": "0.000000000000999402852189219754058408407363092",
+            "price1": "1000597504609.349650191274105384587",
+            "createdAtTimestamp": "1638901299",
+            "createdAtBlockNumber": "13760086"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276331",
+            "tickIdx": "-276331",
+            "liquidityGross": "733805684650886597",
+            "liquidityNet": "733805684650886597",
+            "price0": "0.000000000000999302921897030051053303077055387",
+            "price1": "1000697564359.810585156293232795125",
+            "createdAtTimestamp": "1637127875",
+            "createdAtBlockNumber": "13631170"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276332",
+            "tickIdx": "-276332",
+            "liquidityGross": "2405176159987872",
+            "liquidityNet": "2405176159987872",
+            "price0": "0.0000000000009992030015968703640169013869166948",
+            "price1": "1000797634116.246566214808862118405",
+            "createdAtTimestamp": "1647315586",
+            "createdAtBlockNumber": "14388808"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276333",
+            "tickIdx": "-276333",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009991030912877415898579155953571589",
+            "price1": "1000897713879.658190871430343004617",
+            "createdAtTimestamp": "1655865122",
+            "createdAtBlockNumber": "15005411"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276334",
+            "tickIdx": "-276334",
+            "liquidityGross": "218722973584298366381",
+            "liquidityNet": "218722973584298366381",
+            "price0": "0.0000000000009990031909686447253853770576513942",
+            "price1": "1000997803651.046156690517486038917",
+            "createdAtTimestamp": "1637447080",
+            "createdAtBlockNumber": "13654495"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276335",
+            "tickIdx": "-276335",
+            "liquidityGross": "30914379000797379548",
+            "liquidityNet": "30914379000797379548",
+            "price0": "0.0000000000009989033006385808672986471929321009",
+            "price1": "1001097903431.411261306186537787521",
+            "createdAtTimestamp": "1643176252",
+            "createdAtBlockNumber": "14079481"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276336",
+            "tickIdx": "-276336",
+            "liquidityGross": "104149104628278639",
+            "liquidityNet": "104149104628278639",
+            "price0": "0.000000000000998803420296551212177429449987102",
+            "price1": "1001198013221.7544024323171564413",
+            "createdAtTimestamp": "1644697862",
+            "createdAtBlockNumber": "14193464"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276337",
+            "tickIdx": "-276337",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009987035499415570564717822717599261",
+            "price1": "1001298133023.076577872560388156944",
+            "createdAtTimestamp": "1658205668",
+            "createdAtBlockNumber": "15170981"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276340",
+            "tickIdx": "-276340",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009984039987888020481944736817729886",
+            "price1": "1001598552502.928789671242569028076",
+            "createdAtTimestamp": "1636771503",
+            "createdAtBlockNumber": "13605124"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276344",
+            "tickIdx": "-276344",
+            "liquidityGross": "8131661916125001172",
+            "liquidityNet": "8131661916125001172",
+            "price0": "0.0000000000009980047370097218201345980462258953",
+            "price1": "1001999252023.849605732705411781805",
+            "createdAtTimestamp": "1639885559",
+            "createdAtBlockNumber": "13833234"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276345",
+            "tickIdx": "-276345",
+            "liquidityGross": "486335717016983",
+            "liquidityNet": "486335717016983",
+            "price0": "0.0000000000009979049465150703131032877174541501",
+            "price1": "1002099451949.051990693278682322983",
+            "createdAtTimestamp": "1650928269",
+            "createdAtBlockNumber": "14656632"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276348",
+            "tickIdx": "-276348",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009976056348954350300963124857889432",
+            "price1": "1002400111848.622364213995438716733",
+            "createdAtTimestamp": "1636856262",
+            "createdAtBlockNumber": "13611293"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276350",
+            "tickIdx": "-276350",
+            "liquidityGross": "3802373718301130",
+            "liquidityNet": "3802373718301130",
+            "price0": "0.0000000000009974061436926350661567304781260129",
+            "price1": "1002600601894.993207173061879944431",
+            "createdAtTimestamp": "1655941477",
+            "createdAtBlockNumber": "15010150"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276356",
+            "tickIdx": "-276356",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009968079094058674813280205368008082",
+            "price1": "1003202312666.274003345306538379253",
+            "createdAtTimestamp": "1660259134",
+            "createdAtBlockNumber": "15323485"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276365",
+            "tickIdx": "-276365",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009959112306865374573488143507289388",
+            "price1": "1004105555984.787845684184316472983",
+            "createdAtTimestamp": "1652550798",
+            "createdAtBlockNumber": "14775020"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276374",
+            "tickIdx": "-276374",
+            "liquidityGross": "39896136276282544",
+            "liquidityNet": "39896136276282544",
+            "price0": "0.0000000000009950153585746973143073090696706127",
+            "price1": "1005009612547.531828966909465050895",
+            "createdAtTimestamp": "1657039291",
+            "createdAtBlockNumber": "15083651"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276378",
+            "tickIdx": "-276378",
+            "liquidityGross": "4344564227043297",
+            "liquidityNet": "4344564227043297",
+            "price0": "0.0000000000009946174519129064676764536104778522",
+            "price1": "1005411676697.147733501557348920534",
+            "createdAtTimestamp": "1662272895",
+            "createdAtBlockNumber": "15470078"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276386",
+            "tickIdx": "-276386",
+            "liquidityGross": "3220686226852915",
+            "liquidityNet": "3220686226852915",
+            "price0": "0.0000000000009938221158943375514193413640135731",
+            "price1": "1006216287610.085019229559819627641",
+            "createdAtTimestamp": "1656611111",
+            "createdAtBlockNumber": "15051615"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276414",
+            "tickIdx": "-276414",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000000991043444855831207823444110614037",
+            "price1": "1009037500011.386198752864005631934",
+            "createdAtTimestamp": "1654951819",
+            "createdAtBlockNumber": "14944331"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276424",
+            "tickIdx": "-276424",
+            "liquidityGross": "36004315926487067",
+            "liquidityNet": "36004315926487067",
+            "price0": "0.0000000000009900529462669113292250785685228213",
+            "price1": "1010046991699.378282407259301399486",
+            "createdAtTimestamp": "1637370468",
+            "createdAtBlockNumber": "13648914"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276525",
+            "tickIdx": "-276525",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009801042344993086373507711109435124",
+            "price1": "1020299642426.149927080837473131994",
+            "createdAtTimestamp": "1643327980",
+            "createdAtBlockNumber": "14090825"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-276526",
+            "tickIdx": "-276526",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009800062338759210452462464862948831",
+            "price1": "1020401672390.392542073545556879307",
+            "createdAtTimestamp": "1643350256",
+            "createdAtBlockNumber": "14092463"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-290186",
+            "tickIdx": "-290186",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000002500415810393388415183988397832887",
+            "price1": "3999334814007.078293001036682258447",
+            "createdAtTimestamp": "1643638077",
+            "createdAtBlockNumber": "14114098"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-290188",
+            "tickIdx": "-290188",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000002499915802233783636118928250993405",
+            "price1": "4000134720963.227848730419819605267",
+            "createdAtTimestamp": "1643109947",
+            "createdAtBlockNumber": "14074487"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-290189",
+            "tickIdx": "-290189",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000002499665835650218614257502500743331",
+            "price1": "4000534734435.324171515292861587227",
+            "createdAtTimestamp": "1643186364",
+            "createdAtBlockNumber": "14080206"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-298430",
+            "tickIdx": "-298430",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000001096472555581778565323489072502667",
+            "price1": "9120155309946.712827893627125237091",
+            "createdAtTimestamp": "1650828457",
+            "createdAtBlockNumber": "14649285"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#887272",
+            "tickIdx": "887272",
+            "liquidityGross": "101999654137826",
+            "liquidityNet": "-101999654137826",
+            "price0": "340256786836388094050805785052980700000",
+            "price1": "0.000000000000000000000000000000000000002938956807585584838874754864968539",
+            "createdAtTimestamp": "1644994211",
+            "createdAtBlockNumber": "14215662"
+          },
+          {
+            "id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168#-887272",
+            "tickIdx": "-887272",
+            "liquidityGross": "101999654137826",
+            "liquidityNet": "101999654137826",
+            "price0": "0.000000000000000000000000000000000000002938956807585584838874754864968539",
+            "price1": "340256786836388094050805785052980700000",
+            "createdAtTimestamp": "1644994211",
+            "createdAtBlockNumber": "14215662"
+          }
+        ]
+      },
+      {
+        "id": "0x6c6bc977e13df9b0de53b251522280bb72383700",
+        "feeTier": "500",
+        "totalValueLockedUSD": "413797129.7645288577917433809999999",
+        "tick": "-276325",
+        "token0": {
+          "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+          "symbol": "DAI",
+          "name": "Dai Stablecoin"
+        },
+        "token1": {
+          "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "name": "USD Coin"
+        },
+        "ticks": [
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#10",
+            "tickIdx": "10",
+            "liquidityGross": "820257905498693132625",
+            "liquidityNet": "-91372846132699078323",
+            "price0": "1.00100045012002100252021001200045",
+            "price1": "0.9990005497800714799850038562430514",
+            "createdAtTimestamp": "1625548359",
+            "createdAtBlockNumber": "12771961"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#110",
+            "tickIdx": "110",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "1.011060166398544560257916276223344",
+            "price1": "0.9890608227224087763534387999349978",
+            "createdAtTimestamp": "1625548383",
+            "createdAtBlockNumber": "12771964"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-197250",
+            "tickIdx": "-197250",
+            "liquidityGross": "210302746405159257",
+            "liquidityNet": "-210302746405159257",
+            "price0": "0.000000002716249371494698467590677339324732",
+            "price1": "368154710.1287389231623766245980771",
+            "createdAtTimestamp": "1622051838",
+            "createdAtBlockNumber": "12511437"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-197280",
+            "tickIdx": "-197280",
+            "liquidityGross": "864769579966161",
+            "liquidityNet": "-864769579966161",
+            "price0": "0.000000002708113240478302278630021304575322",
+            "price1": "369260777.2278317759131945974247213",
+            "createdAtTimestamp": "1622527724",
+            "createdAtBlockNumber": "12546891"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-197300",
+            "tickIdx": "-197300",
+            "liquidityGross": "210302746405159257",
+            "liquidityNet": "210302746405159257",
+            "price0": "0.000000002702702696867053171868381454994",
+            "price1": "370000000.7989004224961966428289317",
+            "createdAtTimestamp": "1622051838",
+            "createdAtBlockNumber": "12511437"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-197400",
+            "tickIdx": "-197400",
+            "liquidityGross": "864769579966161",
+            "liquidityNet": "864769579966161",
+            "price0": "0.000000002675811693522979430363721882832792",
+            "price1": "373718375.7812934322644967247488536",
+            "createdAtTimestamp": "1622527724",
+            "createdAtBlockNumber": "12546891"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-242310",
+            "tickIdx": "-242310",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.00000000003000105612366301985606375937568898",
+            "price1": "33332159903.9061974337755183377453",
+            "createdAtTimestamp": "1626030602",
+            "createdAtBlockNumber": "12807817"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-244130",
+            "tickIdx": "-244130",
+            "liquidityGross": "1059987331357746",
+            "liquidityNet": "-1059987331357746",
+            "price0": "0.00000000002500914816561506317190963681318697",
+            "price1": "39985368289.14846298804761143611494",
+            "createdAtTimestamp": "1625053202",
+            "createdAtBlockNumber": "12735112"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-246360",
+            "tickIdx": "-246360",
+            "liquidityGross": "1059987331357746",
+            "liquidityNet": "1059987331357746",
+            "price0": "0.00000000002001041391551443591689387176100222",
+            "price1": "49973978760.36346799453885991495639",
+            "createdAtTimestamp": "1625053202",
+            "createdAtBlockNumber": "12735112"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-246370",
+            "tickIdx": "-246370",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.00000000001999041450292571429659015820732027",
+            "price1": "50023975233.41220065683650172089672",
+            "createdAtTimestamp": "1626030602",
+            "createdAtBlockNumber": "12807817"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-253300",
+            "tickIdx": "-253300",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000009997024827745312633149241281014369",
+            "price1": "100029760576.8311208127395629746463",
+            "createdAtTimestamp": "1623216851",
+            "createdAtBlockNumber": "12598500"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-265680",
+            "tickIdx": "-265680",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000002898952391376939815544125164812207",
+            "price1": "344952198240.489759744967571884625",
+            "createdAtTimestamp": "1622225774",
+            "createdAtBlockNumber": "12524358"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-269390",
+            "tickIdx": "-269390",
+            "liquidityGross": "77428904874239",
+            "liquidityNet": "-77428904874239",
+            "price0": "0.000000000002000441639911616624027781043352729",
+            "price1": "499889614397.4397232272651920233859",
+            "createdAtTimestamp": "1620347610",
+            "createdAtBlockNumber": "12383996"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-271940",
+            "tickIdx": "-271940",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001550194993518447632313865976469707",
+            "price1": "645080137776.938188005645264571907",
+            "createdAtTimestamp": "1622582747",
+            "createdAtBlockNumber": "12551015"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-272250",
+            "tickIdx": "-272250",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000015028785090254814469634899170894",
+            "price1": "665389779675.8266809570447994687756",
+            "createdAtTimestamp": "1620311206",
+            "createdAtBlockNumber": "12381251"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-272270",
+            "tickIdx": "-272270",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001499875905739196694083681677845666",
+            "price1": "666721824234.6265517561751695110661",
+            "createdAtTimestamp": "1620304476",
+            "createdAtBlockNumber": "12380767"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-272720",
+            "tickIdx": "-272720",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001433880814961950607915709771713029",
+            "price1": "697408033893.3441631439512778755002",
+            "createdAtTimestamp": "1637318253",
+            "createdAtBlockNumber": "13645122"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-272730",
+            "tickIdx": "-272730",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001432447722466085600868150079238187",
+            "price1": "698105755844.5563707054964132037066",
+            "createdAtTimestamp": "1637318253",
+            "createdAtBlockNumber": "13645122"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-273050",
+            "tickIdx": "-273050",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001387337267282640129969308137854044",
+            "price1": "720805260251.3066547357512238711708",
+            "createdAtTimestamp": "1625698904",
+            "createdAtBlockNumber": "12783156"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-273780",
+            "tickIdx": "-273780",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001289674582181495294965696479675372",
+            "price1": "775389399633.2715753254141978980402",
+            "createdAtTimestamp": "1620263928",
+            "createdAtBlockNumber": "12377717"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-273930",
+            "tickIdx": "-273930",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001270474781901792443753547905398043",
+            "price1": "787107319440.9142442513965002780053",
+            "createdAtTimestamp": "1622131060",
+            "createdAtBlockNumber": "12517284"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-274090",
+            "tickIdx": "-274090",
+            "liquidityGross": "1142223004754967",
+            "liquidityNet": "-1142223004754967",
+            "price0": "0.000000000001250309942491709597085034031655523",
+            "price1": "799801685978.0595388081761181796848",
+            "createdAtTimestamp": "1621657388",
+            "createdAtBlockNumber": "12481954"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-274440",
+            "tickIdx": "-274440",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001207308165117279706668724154217523",
+            "price1": "828288939719.7595496363747833728338",
+            "createdAtTimestamp": "1620302569",
+            "createdAtBlockNumber": "12380627"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-274500",
+            "tickIdx": "-274500",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001200086364277426040001714489684001",
+            "price1": "833273362456.7942101996071614271841",
+            "createdAtTimestamp": "1625183936",
+            "createdAtBlockNumber": "12744850"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-274920",
+            "tickIdx": "-274920",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001150728965149926095011671835742881",
+            "price1": "869014364185.8463777076865405950828",
+            "createdAtTimestamp": "1624772347",
+            "createdAtBlockNumber": "12714297"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-274930",
+            "tickIdx": "-274930",
+            "liquidityGross": "2493370967581957",
+            "liquidityNet": "-2493370967581957",
+            "price0": "0.000000000001149578868832628883132201099154678",
+            "price1": "869883769710.7960829103123648868511",
+            "createdAtTimestamp": "1622988847",
+            "createdAtBlockNumber": "12581435"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275160",
+            "tickIdx": "-275160",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001123441592519613755438191302133508",
+            "price1": "890121931267.6830292180455634390094",
+            "createdAtTimestamp": "1621508500",
+            "createdAtBlockNumber": "12470880"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275260",
+            "tickIdx": "-275260",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001112263717995591505528204874104999",
+            "price1": "899067355898.3819460235683762390926",
+            "createdAtTimestamp": "1624725639",
+            "createdAtBlockNumber": "12710775"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275270",
+            "tickIdx": "-275270",
+            "liquidityGross": "693542921054872",
+            "liquidityNet": "-693542921054872",
+            "price0": "0.000000000001111152065778022298232857236797485",
+            "price1": "899966827942.4974476295859065626696",
+            "createdAtTimestamp": "1620247619",
+            "createdAtBlockNumber": "12376492"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275280",
+            "tickIdx": "-275280",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001110041524601506424508722318940579",
+            "price1": "900867199863.5274401256588221938093",
+            "createdAtTimestamp": "1626778575",
+            "createdAtBlockNumber": "12862995"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275340",
+            "tickIdx": "-275340",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.00000000000110340154729806387792800309745274",
+            "price1": "906288379283.8004523384862815683968",
+            "createdAtTimestamp": "1623671006",
+            "createdAtBlockNumber": "12632359"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275360",
+            "tickIdx": "-275360",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001101197059648455286542950996811477",
+            "price1": "908102679023.8966821134033026712838",
+            "createdAtTimestamp": "1623672418",
+            "createdAtBlockNumber": "12632468"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275370",
+            "tickIdx": "-275370",
+            "liquidityGross": "21744197223756381",
+            "liquidityNet": "-21744197223756381",
+            "price0": "0.00000000000110009646800500499833346544357093",
+            "price1": "909011190458.1175334767602242898289",
+            "createdAtTimestamp": "1620240957",
+            "createdAtBlockNumber": "12375977"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275420",
+            "tickIdx": "-275420",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001094609987614993910274406749912516",
+            "price1": "913567399635.0643679986907795889858",
+            "createdAtTimestamp": "1625847647",
+            "createdAtBlockNumber": "12794187"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275460",
+            "tickIdx": "-275460",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001090240510913806422978174226142119",
+            "price1": "917228804093.7227946873544853761391",
+            "createdAtTimestamp": "1626026341",
+            "createdAtBlockNumber": "12807507"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275500",
+            "tickIdx": "-275500",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001085888476339822452128694059623964",
+            "price1": "920904882765.3787943517888935621821",
+            "createdAtTimestamp": "1625267268",
+            "createdAtBlockNumber": "12751065"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275660",
+            "tickIdx": "-275660",
+            "liquidityGross": "221505407847434",
+            "liquidityNet": "-221505407847434",
+            "price0": "0.000000000001068653370964590624695002032517997",
+            "price1": "935757119352.3466413446339269654935",
+            "createdAtTimestamp": "1622652913",
+            "createdAtBlockNumber": "12556286"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275740",
+            "tickIdx": "-275740",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001060138673922199052530833902145292",
+            "price1": "943272823262.1645867545359106686735",
+            "createdAtTimestamp": "1622086332",
+            "createdAtBlockNumber": "12513985"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275810",
+            "tickIdx": "-275810",
+            "liquidityGross": "589666095829075",
+            "liquidityNet": "-589666095829075",
+            "price0": "0.000000000001052743984539338224775783825398524",
+            "price1": "949898564785.0383672691427347978044",
+            "createdAtTimestamp": "1620277728",
+            "createdAtBlockNumber": "12378817"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275830",
+            "tickIdx": "-275830",
+            "liquidityGross": "421754680627957858",
+            "liquidityNet": "-421754680627957858",
+            "price0": "0.000000000001050640705712333102272301549663824",
+            "price1": "951800167805.2262725952598388681982",
+            "createdAtTimestamp": "1620271421",
+            "createdAtBlockNumber": "12378304"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275840",
+            "tickIdx": "-275840",
+            "liquidityGross": "1487364390802174",
+            "liquidityNet": "-1487364390802174",
+            "price0": "0.000000000001049590642627943055478410973890492",
+            "price1": "952752396397.3430215585651413635896",
+            "createdAtTimestamp": "1620243871",
+            "createdAtBlockNumber": "12376210"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275900",
+            "tickIdx": "-275900",
+            "liquidityGross": "723130601426421",
+            "liquidityNet": "-723130601426421",
+            "price0": "0.000000000001043312266647857885777587665231596",
+            "price1": "958485807142.8419412799406176053328",
+            "createdAtTimestamp": "1621851670",
+            "createdAtBlockNumber": "12496431"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275930",
+            "tickIdx": "-275930",
+            "liquidityGross": "5162113950898695",
+            "liquidityNet": "-5162113950898695",
+            "price0": "0.000000000001040187176079391714494783223037008",
+            "price1": "961365437871.6120122897426689048391",
+            "createdAtTimestamp": "1621324539",
+            "createdAtBlockNumber": "12457154"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275940",
+            "tickIdx": "-275940",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001039147560777492340272012593249023",
+            "price1": "962327236039.3147101690694890002048",
+            "createdAtTimestamp": "1620353467",
+            "createdAtBlockNumber": "12384399"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-275990",
+            "tickIdx": "-275990",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001033965049170239703818820437478243",
+            "price1": "967150679611.9493926478851777487473",
+            "createdAtTimestamp": "1628383260",
+            "createdAtBlockNumber": "12981253"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276000",
+            "tickIdx": "-276000",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001032931652574448104735595182768876",
+            "price1": "968118265625.4455615728883584008927",
+            "createdAtTimestamp": "1621492504",
+            "createdAtBlockNumber": "12469648"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276010",
+            "tickIdx": "-276010",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001031899288807111442949974639119045",
+            "price1": "969086819660.4850633834569021343528",
+            "createdAtTimestamp": "1652540301",
+            "createdAtBlockNumber": "14774240"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276020",
+            "tickIdx": "-276020",
+            "liquidityGross": "2175273501673577",
+            "liquidityNet": "-2175273501673577",
+            "price0": "0.00000000000103086795683596909202644319176528",
+            "price1": "970056342685.5251672898922647904686",
+            "createdAtTimestamp": "1620452202",
+            "createdAtBlockNumber": "12391810"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276030",
+            "tickIdx": "-276030",
+            "liquidityGross": "4505054107141854",
+            "liquidityNet": "-4505054107141854",
+            "price0": "0.000000000001029837655629792118639599753867007",
+            "price1": "971026835669.9920356937125606506781",
+            "createdAtTimestamp": "1620257494",
+            "createdAtBlockNumber": "12377251"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276040",
+            "tickIdx": "-276040",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.00000000000102880838415838225144825196380279",
+            "price1": "971998299584.2816935169620026746055",
+            "createdAtTimestamp": "1620352476",
+            "createdAtBlockNumber": "12384333"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276080",
+            "tickIdx": "-276080",
+            "liquidityGross": "6124834742829561",
+            "liquidityNet": "-6124834742829561",
+            "price0": "0.000000000001024701575052463930740437136548181",
+            "price1": "975893883981.5882696001260256720771",
+            "createdAtTimestamp": "1620246606",
+            "createdAtBlockNumber": "12376417"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276090",
+            "tickIdx": "-276090",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001023677436837916644806534719883472",
+            "price1": "976870217134.9454118932592145205425",
+            "createdAtTimestamp": "1620940863",
+            "createdAtBlockNumber": "12428485"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276100",
+            "tickIdx": "-276100",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001022654322198533125359375127178452",
+            "price1": "977847527060.9230108232592106310929",
+            "createdAtTimestamp": "1621875266",
+            "createdAtBlockNumber": "12498230"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276110",
+            "tickIdx": "-276110",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001021632230111300949859172292046977",
+            "price1": "978825814736.7333517591975088992069",
+            "createdAtTimestamp": "1620251743",
+            "createdAtBlockNumber": "12376794"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276120",
+            "tickIdx": "-276120",
+            "liquidityGross": "10492826430304607183",
+            "liquidityNet": "-10492826430304607183",
+            "price0": "0.000000000001020611159554230145756837145333088",
+            "price1": "979805081140.5663722183290899624884",
+            "createdAtTimestamp": "1620240639",
+            "createdAtBlockNumber": "12375951"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276130",
+            "tickIdx": "-276130",
+            "liquidityGross": "20123309318099438",
+            "liquidityNet": "-20123309318099438",
+            "price0": "0.000000000001019591109506352168606109547083878",
+            "price1": "980785327251.5906399583014091599263",
+            "createdAtTimestamp": "1620238451",
+            "createdAtBlockNumber": "12375791"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276140",
+            "tickIdx": "-276140",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001018572078947718881197016273005249",
+            "price1": "981766554049.954332047895853365752",
+            "createdAtTimestamp": "1620242439",
+            "createdAtBlockNumber": "12376083"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276150",
+            "tickIdx": "-276150",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001017554066859401533709634290850764",
+            "price1": "982748762516.7862149172806386228485",
+            "createdAtTimestamp": "1620338160",
+            "createdAtBlockNumber": "12383310"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276170",
+            "tickIdx": "-276170",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001015521094023090484227122785844028",
+            "price1": "984716128385.2784526889663128043608",
+            "createdAtTimestamp": "1620251756",
+            "createdAtBlockNumber": "12376797"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276180",
+            "tickIdx": "-276180",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001014506131242327055190153951639378",
+            "price1": "985701287754.1081214435799400570874",
+            "createdAtTimestamp": "1620255408",
+            "createdAtBlockNumber": "12377099"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276190",
+            "tickIdx": "-276190",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.000000000001013492182866338079424579721882067",
+            "price1": "986687432725.7465756553882346915377",
+            "createdAtTimestamp": "1620254455",
+            "createdAtBlockNumber": "12377018"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276200",
+            "tickIdx": "-276200",
+            "liquidityGross": "599768970047018522",
+            "liquidityNet": "-599768970047018522",
+            "price0": "0.000000000001012479247881276482006537259580735",
+            "price1": "987674564286.2402636668390442781166",
+            "createdAtTimestamp": "1620316423",
+            "createdAtBlockNumber": "12381651"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276210",
+            "tickIdx": "-276210",
+            "liquidityGross": "69718902512323639",
+            "liquidityNet": "-69718902512323639",
+            "price0": "0.000000000001011467325274308477694170269165988",
+            "price1": "988662683422.622124107970701597887",
+            "createdAtTimestamp": "1620243099",
+            "createdAtBlockNumber": "12376139"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#276220",
+            "tickIdx": "276220",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "989651791122.9125728307386440967874",
+            "price1": "0.000000000001010456414033612558195033463752468",
+            "createdAtTimestamp": "1623085204",
+            "createdAtBlockNumber": "12588596"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276220",
+            "tickIdx": "-276220",
+            "liquidityGross": "813390097728035629",
+            "liquidityNet": "-813390097728035629",
+            "price0": "0.000000000001010456414033612558195033463752468",
+            "price1": "989651791122.9125728307386440967873",
+            "createdAtTimestamp": "1620241410",
+            "createdAtBlockNumber": "12376007"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276230",
+            "tickIdx": "-276230",
+            "liquidityGross": "4468739463673824334",
+            "liquidityNet": "-4468739463673824334",
+            "price0": "0.000000000001009446513148378480445672847734894",
+            "price1": "990641888376.1204908307205988591345",
+            "createdAtTimestamp": "1620256607",
+            "createdAtBlockNumber": "12377200"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276240",
+            "tickIdx": "-276240",
+            "liquidityGross": "15873138554073887",
+            "liquidityNet": "-15873138554073887",
+            "price0": "0.000000000001008437621608806255902370195376836",
+            "price1": "991632976172.2442131571881561047881",
+            "createdAtTimestamp": "1620513866",
+            "createdAtBlockNumber": "12396450"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276250",
+            "tickIdx": "-276250",
+            "liquidityGross": "4691334568520242133",
+            "liquidityNet": "-4691334568520242133",
+            "price0": "0.000000000001007429738406105140842041117114156",
+            "price1": "992625055502.2725188125335424819957",
+            "createdAtTimestamp": "1620158987",
+            "createdAtBlockNumber": "12369823"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276260",
+            "tickIdx": "-276260",
+            "liquidityGross": "12939014175560898439",
+            "liquidityNet": "-12939014175560898439",
+            "price0": "0.000000000001006422862532492627672277115347712",
+            "price1": "993618127358.1856216420413946843",
+            "createdAtTimestamp": "1620269350",
+            "createdAtBlockNumber": "12378154"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276270",
+            "tickIdx": "-276270",
+            "liquidityGross": "4877533683722838734",
+            "liquidityNet": "-4877533683722838734",
+            "price0": "0.000000000001005416992981193437249523040543085",
+            "price1": "994612192732.9561622149963241659498",
+            "createdAtTimestamp": "1620242948",
+            "createdAtBlockNumber": "12376126"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276280",
+            "tickIdx": "-276280",
+            "liquidityGross": "1263374485847080519",
+            "liquidityNet": "-1263374485847080519",
+            "price0": "0.000000000001004412128746438512204382366489789",
+            "price1": "995607252620.5502006981180549669848",
+            "createdAtTimestamp": "1620277763",
+            "createdAtBlockNumber": "12378820"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276290",
+            "tickIdx": "-276290",
+            "liquidityGross": "328094131843203366",
+            "liquidityNet": "-328094131843203366",
+            "price0": "0.000000000001003408268823464011273043710599585",
+            "price1": "996603308015.9282107223169088876369",
+            "createdAtTimestamp": "1620248068",
+            "createdAtBlockNumber": "12376524"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276300",
+            "tickIdx": "-276300",
+            "liquidityGross": "770883810604837101997",
+            "liquidityNet": "-770883810604837101997",
+            "price0": "0.000000000001002405412208510304633823031144294",
+            "price1": "997600359915.0460742437634054727482",
+            "createdAtTimestamp": "1620234401",
+            "createdAtBlockNumber": "12375470"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276310",
+            "tickIdx": "-276310",
+            "liquidityGross": "409206085222738948434031",
+            "liquidityNet": "-409206085222738948434031",
+            "price0": "0.000000000001001403557898820970247816938348729",
+            "price1": "998598409314.8560774002667384817155",
+            "createdAtTimestamp": "1620240438",
+            "createdAtBlockNumber": "12375934"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276320",
+            "tickIdx": "-276320",
+            "liquidityGross": "264388526243553661714",
+            "liquidityNet": "170470120263605225134",
+            "price0": "0.00000000000100040270489264179120266356026516",
+            "price1": "999597457213.30790736395788572891",
+            "createdAtTimestamp": "1620158293",
+            "createdAtBlockNumber": "12369760"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276330",
+            "tickIdx": "-276330",
+            "liquidityGross": "409402715182975345739861",
+            "liquidityNet": "409402715182975345739861",
+            "price0": "0.000000000000999402852189219754058408407363092",
+            "price1": "1000597504609.349650191274105384587",
+            "createdAtTimestamp": "1620158293",
+            "createdAtBlockNumber": "12369760"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276340",
+            "tickIdx": "-276340",
+            "liquidityGross": "408477480138072809788",
+            "liquidityNet": "408477480138072809788",
+            "price0": "0.0000000000009984039987888020481944736817729886",
+            "price1": "1001598552502.928789671242569028076",
+            "createdAtTimestamp": "1620247347",
+            "createdAtBlockNumber": "12376471"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276350",
+            "tickIdx": "-276350",
+            "liquidityGross": "142125418293262745",
+            "liquidityNet": "142125418293262745",
+            "price0": "0.0000000000009974061436926350661567304781260129",
+            "price1": "1002600601894.993207173061879944431",
+            "createdAtTimestamp": "1620234401",
+            "createdAtBlockNumber": "12375470"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276360",
+            "tickIdx": "-276360",
+            "liquidityGross": "983975366101868530",
+            "liquidityNet": "983975366101868530",
+            "price0": "0.0000000000009964092859029634050036743229348203",
+            "price1": "1003603653787.492182493981224353778",
+            "createdAtTimestamp": "1620249536",
+            "createdAtBlockNumber": "12376634"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276370",
+            "tickIdx": "-276370",
+            "liquidityGross": "5104195969755401991",
+            "liquidityNet": "5104195969755401991",
+            "price0": "0.000000000000995413424423028868650705498463986",
+            "price1": "1004607709183.377395708477903460263",
+            "createdAtTimestamp": "1620242948",
+            "createdAtBlockNumber": "12376126"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276380",
+            "tickIdx": "-276380",
+            "liquidityGross": "13019239430220619502",
+            "liquidityNet": "13019239430220619502",
+            "price0": "0.0000000000009944185582570694712115165950436771",
+            "price1": "1005612769086.603930019734995405892",
+            "createdAtTimestamp": "1620245275",
+            "createdAtBlockNumber": "12376322"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276390",
+            "tickIdx": "-276390",
+            "liquidityGross": "79858489284679830",
+            "liquidityNet": "79858489284679830",
+            "price0": "0.000000000000993424686410318441335590732787827",
+            "price1": "1006618834502.131275614421898414502",
+            "createdAtTimestamp": "1620335620",
+            "createdAtBlockNumber": "12383103"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276400",
+            "tickIdx": "-276400",
+            "liquidityGross": "4379469922636537682",
+            "liquidityNet": "4379469922636537682",
+            "price0": "0.0000000000009924318078890032275408148896891897",
+            "price1": "1007625906435.924334521781509613783",
+            "createdAtTimestamp": "1620158987",
+            "createdAtBlockNumber": "12369823"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276410",
+            "tickIdx": "-276410",
+            "liquidityGross": "739539542583876538",
+            "liquidityNet": "739539542583876538",
+            "price0": "0.0000000000009914399217003445045402137680793443",
+            "price1": "1008633985894.954426478028798229559",
+            "createdAtTimestamp": "1620241410",
+            "createdAtBlockNumber": "12376007"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276420",
+            "tickIdx": "-276420",
+            "liquidityGross": "307311825843126491",
+            "liquidityNet": "307311825843126491",
+            "price0": "0.0000000000009904490268525551805618106254629787",
+            "price1": "1009643073887.200295797066537057452",
+            "createdAtTimestamp": "1620240957",
+            "createdAtBlockNumber": "12375977"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276430",
+            "tickIdx": "-276430",
+            "liquidityGross": "621889749847652157",
+            "liquidityNet": "621889749847652157",
+            "price0": "0.0000000000009894591223548394056606224887634564",
+            "price1": "1010653171421.649119248524962333744",
+            "createdAtTimestamp": "1620243099",
+            "createdAtBlockNumber": "12376139"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276440",
+            "tickIdx": "-276440",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009884702072173915810217981630519833",
+            "price1": "1011664279508.297514944133139350486",
+            "createdAtTimestamp": "1620249885",
+            "createdAtBlockNumber": "12376656"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276450",
+            "tickIdx": "-276450",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009874822804513953692539084368764451",
+            "price1": "1012676399158.152552233430819390891",
+            "createdAtTimestamp": "1622919338",
+            "createdAtBlockNumber": "12576160"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276460",
+            "tickIdx": "-276460",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009864953410690227056713988763592541",
+            "price1": "1013689531383.2327626098305828007",
+            "createdAtTimestamp": "1621207538",
+            "createdAtBlockNumber": "12448448"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276470",
+            "tickIdx": "-276470",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009855093880834328105652165892973384",
+            "price1": "1014703677196.569151628041073260526",
+            "createdAtTimestamp": "1620316423",
+            "createdAtBlockNumber": "12381651"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276480",
+            "tickIdx": "-276480",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009845244205087712024606233285725941",
+            "price1": "1015718837612.206211833863139584286",
+            "createdAtTimestamp": "1620251756",
+            "createdAtBlockNumber": "12376797"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276490",
+            "tickIdx": "-276490",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009835404373601687123612082912688914",
+            "price1": "1016735013645.202936707371713640536",
+            "createdAtTimestamp": "1623243338",
+            "createdAtBlockNumber": "12600438"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276500",
+            "tickIdx": "-276500",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009825574376537404989781149559928501",
+            "price1": "1017752206311.633835620497266278059",
+            "createdAtTimestamp": "1620242439",
+            "createdAtBlockNumber": "12376083"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276510",
+            "tickIdx": "-276510",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009815754204065850649434972860112489",
+            "price1": "1018770416628.589949810021697435243",
+            "createdAtTimestamp": "1620290798",
+            "createdAtBlockNumber": "12379733"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276520",
+            "tickIdx": "-276520",
+            "liquidityGross": "10492826430304607183",
+            "liquidityNet": "10492826430304607183",
+            "price0": "0.0000000000009805943846367832740072216099489141",
+            "price1": "1019789645614.179869367004531925832",
+            "createdAtTimestamp": "1620241290",
+            "createdAtBlockNumber": "12375996"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276530",
+            "tickIdx": "-276530",
+            "liquidityGross": "20296570094471047",
+            "liquidityNet": "20296570094471047",
+            "price0": "0.0000000000009796143293633973692158314749384195",
+            "price1": "1020809894287.53075124365630872234",
+            "createdAtTimestamp": "1620238451",
+            "createdAtBlockNumber": "12375791"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276540",
+            "tickIdx": "-276540",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009786352536064699920727937492777617",
+            "price1": "1021831163668.789338278677068903971",
+            "createdAtTimestamp": "1620251743",
+            "createdAtBlockNumber": "12376794"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276560",
+            "tickIdx": "-276560",
+            "liquidityGross": "6124834742829561",
+            "liquidityNet": "6124834742829561",
+            "price0": "0.0000000000009766800367270575008528600136443562",
+            "price1": "1023876768640.720649900512240235751",
+            "createdAtTimestamp": "1620246606",
+            "createdAtBlockNumber": "12376417"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276570",
+            "tickIdx": "-276570",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009757038936495508482280587883509511",
+            "price1": "1024901106276.793975104117624211216",
+            "createdAtTimestamp": "1622733134",
+            "createdAtBlockNumber": "12562276"
+          },
+          {
+            "id": "0x6c6bc977e13df9b0de53b251522280bb72383700#-276580",
+            "tickIdx": "-276580",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "0.0000000000009747287261784576913295823424260088",
+            "price1": "1025926468711.578251895923657723443",
+            "createdAtTimestamp": "1621537580",
+            "createdAtBlockNumber": "12473064"
+          }
+        ]
+      },
+      {
+        "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+        "feeTier": "3000",
+        "totalValueLockedUSD": "292483605.4545700091344496177034616",
+        "tick": "202282",
+        "token0": {
+          "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "name": "USD Coin"
+        },
+        "token1": {
+          "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "name": "Wrapped Ether"
+        },
+        "ticks": [
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#0",
+            "tickIdx": "0",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "1",
+            "price1": "1",
+            "createdAtTimestamp": "1622488494",
+            "createdAtBlockNumber": "12543934"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#105960",
+            "tickIdx": "105960",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "39953.44719942822385402034558214009",
+            "price1": "0.00002502912940173810732272813416956387",
+            "createdAtTimestamp": "1623967517",
+            "createdAtBlockNumber": "12654537"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#-1080",
+            "tickIdx": "-1080",
+            "liquidityGross": "955255939572502",
+            "liquidityNet": "955255939572502",
+            "price0": "0.8976324433094195884383843668365469",
+            "price1": "1.114041729945910239807309095780991",
+            "createdAtTimestamp": "1620937986",
+            "createdAtBlockNumber": "12428255"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#115140",
+            "tickIdx": "115140",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "100049.8997864926770132351218727111",
+            "price1": "0.000009995012510097544967562707071231679",
+            "createdAtTimestamp": "1622536811",
+            "createdAtBlockNumber": "12547524"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#120660",
+            "tickIdx": "120660",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "173754.1660171966344141422511922068",
+            "price1": "0.000005755257689194220169430331041597795",
+            "createdAtTimestamp": "1623419807",
+            "createdAtBlockNumber": "12613656"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#121860",
+            "tickIdx": "121860",
+            "liquidityGross": "51853265344561",
+            "liquidityNet": "51853265344561",
+            "price0": "195906.0997714214417019409961326015",
+            "price1": "0.000005104486287904134258919645428956792",
+            "createdAtTimestamp": "1627837558",
+            "createdAtBlockNumber": "12940858"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#127020",
+            "tickIdx": "127020",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "328195.5643080873381871764528901096",
+            "price1": "0.000003046963788521130154098640346193786",
+            "createdAtTimestamp": "1621745686",
+            "createdAtBlockNumber": "12488544"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#132000",
+            "tickIdx": "132000",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "540008.4378122934596355601827274825",
+            "price1": "0.000001851822916047840113451946740348542",
+            "createdAtTimestamp": "1624797970",
+            "createdAtBlockNumber": "12716134"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#137520",
+            "tickIdx": "137520",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "937819.1877708574075378331829451858",
+            "price1": "0.000001066303625517561469538733226760225",
+            "createdAtTimestamp": "1654328226",
+            "createdAtBlockNumber": "14902082"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#137700",
+            "tickIdx": "137700",
+            "liquidityGross": "13327253744",
+            "liquidityNet": "13327253744",
+            "price0": "954851.9162264106035474653265822422",
+            "price1": "0.000001047282812137001635779484275822124",
+            "createdAtTimestamp": "1653828728",
+            "createdAtBlockNumber": "14866530"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#137880",
+            "tickIdx": "137880",
+            "liquidityGross": "211589451451",
+            "liquidityNet": "211589451451",
+            "price0": "972193.9941199191004823798879203743",
+            "price1": "0.000001028601293618618115135406808179443",
+            "createdAtTimestamp": "1652582727",
+            "createdAtBlockNumber": "14777426"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138060",
+            "tickIdx": "138060",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "989851.0398744683706159317163452567",
+            "price1": "0.000001010253017592241664350351035051949",
+            "createdAtTimestamp": "1646476101",
+            "createdAtBlockNumber": "14326334"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138120",
+            "tickIdx": "138120",
+            "liquidityGross": "1402776269606",
+            "liquidityNet": "1402776269606",
+            "price0": "995807.700398146255044356312819708",
+            "price1": "0.000001004209948969241319925134549218095",
+            "createdAtTimestamp": "1648371975",
+            "createdAtBlockNumber": "14467327"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138180",
+            "tickIdx": "138180",
+            "liquidityGross": "159184768537028",
+            "liquidityNet": "159184768537028",
+            "price0": "1001800.206521985192235782332949707",
+            "price1": "0.0000009982030283980125277907193198057797",
+            "createdAtTimestamp": "1620284794",
+            "createdAtBlockNumber": "12379317"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138240",
+            "tickIdx": "138240",
+            "liquidityGross": "502931595013",
+            "liquidityNet": "502931595013",
+            "price0": "1007828.773955281657711364078124269",
+            "price1": "0.0000009922320396503890371945636341570102",
+            "createdAtTimestamp": "1653480258",
+            "createdAtBlockNumber": "14841776"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138360",
+            "tickIdx": "138360",
+            "liquidityGross": "501522328919",
+            "liquidityNet": "501522328919",
+            "price0": "1019994.9620856507109910388362656",
+            "price1": "0.0000009803969991726569919738299794784876",
+            "createdAtTimestamp": "1655213505",
+            "createdAtBlockNumber": "14961993"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138600",
+            "tickIdx": "138600",
+            "liquidityGross": "52134792827",
+            "liquidityNet": "52134792827",
+            "price0": "1044769.710320714414906132880126198",
+            "price1": "0.0000009571487286830210702627241858594492",
+            "createdAtTimestamp": "1661670300",
+            "createdAtBlockNumber": "15426383"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#138720",
+            "tickIdx": "138720",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "1057381.837675233649265556770665105",
+            "price1": "0.0000009457321512147459256078575426231509",
+            "createdAtTimestamp": "1662090343",
+            "createdAtBlockNumber": "15456874"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#141780",
+            "tickIdx": "141780",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "1435883.859101469016086914751247642",
+            "price1": "0.0000006964351564100515527215321166560879",
+            "createdAtTimestamp": "1626181754",
+            "createdAtBlockNumber": "12818967"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#143460",
+            "tickIdx": "143460",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "1698545.318679910813002843220687348",
+            "price1": "0.0000005887390751382412846380212774833455",
+            "createdAtTimestamp": "1622099463",
+            "createdAtBlockNumber": "12514997"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#144360",
+            "tickIdx": "144360",
+            "liquidityGross": "265816663181",
+            "liquidityNet": "265816663181",
+            "price0": "1858496.244713020730371190367260287",
+            "price1": "0.00000053806942190212214806334830080578",
+            "createdAtTimestamp": "1621570716",
+            "createdAtBlockNumber": "12475540"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#144900",
+            "tickIdx": "144900",
+            "liquidityGross": "46394623531",
+            "liquidityNet": "46394623531",
+            "price0": "1961608.873459588622063686600382583",
+            "price1": "0.0000005097856221644998280763477936692517",
+            "createdAtTimestamp": "1660709202",
+            "createdAtBlockNumber": "15356489"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#145080",
+            "tickIdx": "145080",
+            "liquidityGross": "1177620950428",
+            "liquidityNet": "1177620950428",
+            "price0": "1997235.731721102902661025788522836",
+            "price1": "0.0000005006920235390829428770842673280902",
+            "createdAtTimestamp": "1624380038",
+            "createdAtBlockNumber": "12685147"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#145680",
+            "tickIdx": "145680",
+            "liquidityGross": "10300265337294",
+            "liquidityNet": "-10300265337294",
+            "price0": "2120731.530227712050971991670218569",
+            "price1": "0.0000004715354045274300731168697866274013",
+            "createdAtTimestamp": "1622945054",
+            "createdAtBlockNumber": "12578116"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#147300",
+            "tickIdx": "147300",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "2493663.691499392675579759749177658",
+            "price1": "0.0000004010163854127093493207632945489245",
+            "createdAtTimestamp": "1622411184",
+            "createdAtBlockNumber": "12538207"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#148440",
+            "tickIdx": "148440",
+            "liquidityGross": "5682652725524",
+            "liquidityNet": "-5682652725524",
+            "price0": "2794762.951862115101543601255663894",
+            "price1": "0.0000003578120997108941513674063697715745",
+            "createdAtTimestamp": "1622917573",
+            "createdAtBlockNumber": "12576031"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#149160",
+            "tickIdx": "149160",
+            "liquidityGross": "368463335144",
+            "liquidityNet": "368463335144",
+            "price0": "3003396.130085413958257820958165399",
+            "price1": "0.0000003329564122370900420996105378452377",
+            "createdAtTimestamp": "1623067381",
+            "createdAtBlockNumber": "12587286"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#149400",
+            "tickIdx": "149400",
+            "liquidityGross": "82670472645576",
+            "liquidityNet": "-82670472645576",
+            "price0": "3076345.885465463148676011946158559",
+            "price1": "0.000000325060977286270296618688254777137",
+            "createdAtTimestamp": "1622990483",
+            "createdAtBlockNumber": "12581557"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#150180",
+            "tickIdx": "150180",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "3325894.272534907263689288637499325",
+            "price1": "0.0000003006710129837731928882444357823084",
+            "createdAtTimestamp": "1620428997",
+            "createdAtBlockNumber": "12390069"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#151200",
+            "tickIdx": "151200",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "3683021.563914021072829349505453677",
+            "price1": "0.0000002715161946913174986582883193926292",
+            "createdAtTimestamp": "1621925717",
+            "createdAtBlockNumber": "12502004"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#152040",
+            "tickIdx": "152040",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "4005743.846395902960235512067278954",
+            "price1": "0.0000002496415243575128446965490201907705",
+            "createdAtTimestamp": "1622251000",
+            "createdAtBlockNumber": "12526247"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#152280",
+            "tickIdx": "152280",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "4103039.714490867854054645701957221",
+            "price1": "0.0000002437217452388433864250322690424332",
+            "createdAtTimestamp": "1622372171",
+            "createdAtBlockNumber": "12535313"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#152340",
+            "tickIdx": "152340",
+            "liquidityGross": "55368831069002",
+            "liquidityNet": "55368831069002",
+            "price0": "4127730.717187081450114008543939896",
+            "price1": "0.0000002422638656722908808636322790946505",
+            "createdAtTimestamp": "1622284946",
+            "createdAtBlockNumber": "12528766"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#153600",
+            "tickIdx": "153600",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "4681981.853367115453309948121334989",
+            "price1": "0.0000002135847663059256482977873626496828",
+            "createdAtTimestamp": "1626013128",
+            "createdAtBlockNumber": "12806488"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#154200",
+            "tickIdx": "154200",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "4971484.528685647760053477704079137",
+            "price1": "0.0000002011471612211530349285642328000995",
+            "createdAtTimestamp": "1621065086",
+            "createdAtBlockNumber": "12437731"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#154260",
+            "tickIdx": "154260",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "5001401.601500818707324527644551546",
+            "price1": "0.0000001999439516514571389238373184074303",
+            "createdAtTimestamp": "1620366647",
+            "createdAtBlockNumber": "12385426"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#154380",
+            "tickIdx": "154380",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "5061776.929504787682107746353912899",
+            "price1": "0.0000001975590813121497415685708386978457",
+            "createdAtTimestamp": "1622729902",
+            "createdAtBlockNumber": "12562038"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#154800",
+            "tickIdx": "154800",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "5278888.127510817124496428012702057",
+            "price1": "0.0000001894338307319908003996882929996128",
+            "createdAtTimestamp": "1620362788",
+            "createdAtBlockNumber": "12385119"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#155040",
+            "tickIdx": "155040",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "5407107.510136714129716000293117076",
+            "price1": "0.0000001849417638035304845849936217713744",
+            "createdAtTimestamp": "1621924771",
+            "createdAtBlockNumber": "12501932"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#155580",
+            "tickIdx": "155580",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "5707103.310973857420803538796749312",
+            "price1": "0.0000001752202379230034423581726698806111",
+            "createdAtTimestamp": "1624725467",
+            "createdAtBlockNumber": "12710762"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#156060",
+            "tickIdx": "156060",
+            "liquidityGross": "29281998136319",
+            "liquidityNet": "29281998136319",
+            "price0": "5987710.951213334103349899934192144",
+            "price1": "0.0000001670087297379247427853592888591603",
+            "createdAtTimestamp": "1625148777",
+            "createdAtBlockNumber": "12742263"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#156360",
+            "tickIdx": "156360",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "6170054.643208959284995743925063656",
+            "price1": "0.0000001620731189310689735087867451726323",
+            "createdAtTimestamp": "1621743715",
+            "createdAtBlockNumber": "12488388"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#156960",
+            "tickIdx": "156960",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "6551569.860912317158970724206707891",
+            "price1": "0.0000001526351731309705232220706798841926",
+            "createdAtTimestamp": "1648839516",
+            "createdAtBlockNumber": "14502115"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#157080",
+            "tickIdx": "157080",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "6630658.326668556588801910504255166",
+            "price1": "0.0000001508145874411885529386801838533853",
+            "createdAtTimestamp": "1632577219",
+            "createdAtBlockNumber": "13295299"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#157140",
+            "tickIdx": "157140",
+            "liquidityGross": "16485423471981",
+            "liquidityNet": "16485423471981",
+            "price0": "6670559.866505774474109642930172839",
+            "price1": "0.0000001499124541286559090376947212213808",
+            "createdAtTimestamp": "1623662454",
+            "createdAtBlockNumber": "12631735"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#157620",
+            "tickIdx": "157620",
+            "liquidityGross": "132370919754",
+            "liquidityNet": "132370919754",
+            "price0": "6998538.871129214378439945542713581",
+            "price1": "0.0000001428869680391801526421284018107595",
+            "createdAtTimestamp": "1651910010",
+            "createdAtBlockNumber": "14728566"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#158340",
+            "tickIdx": "158340",
+            "liquidityGross": "6458007493",
+            "liquidityNet": "6458007493",
+            "price0": "7520990.124689063453988989779818454",
+            "price1": "0.0000001329612169968568468990541445639758",
+            "createdAtTimestamp": "1659849477",
+            "createdAtBlockNumber": "15293212"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#159300",
+            "tickIdx": "159300",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "8278758.314474428010565044888780482",
+            "price1": "0.0000001207910609313981885699816842472303",
+            "createdAtTimestamp": "1622602139",
+            "createdAtBlockNumber": "12552427"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#159960",
+            "tickIdx": "159960",
+            "liquidityGross": "2361307768515",
+            "liquidityNet": "2361307768515",
+            "price0": "8843561.634625586966053644509674945",
+            "price1": "0.0000001130766133957449777970456786832737",
+            "createdAtTimestamp": "1621392472",
+            "createdAtBlockNumber": "12462258"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#160560",
+            "tickIdx": "160560",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "9390388.775941226628264282624763092",
+            "price1": "0.0000001064918635277448374180014280637301",
+            "createdAtTimestamp": "1621840034",
+            "createdAtBlockNumber": "12495581"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#161160",
+            "tickIdx": "161160",
+            "liquidityGross": "2419764038440367",
+            "liquidityNet": "2419764038440367",
+            "price0": "9971028.077428698944041262096083294",
+            "price1": "0.0000001002905610368993390194999357198471",
+            "createdAtTimestamp": "1620248880",
+            "createdAtBlockNumber": "12376586"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#161880",
+            "tickIdx": "161880",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "10715380.03635302548682702303011921",
+            "price1": "0.00000009332380154575922308676200328600233",
+            "createdAtTimestamp": "1659134606",
+            "createdAtBlockNumber": "15240137"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#162120",
+            "tickIdx": "162120",
+            "liquidityGross": "961652346063",
+            "liquidityNet": "961652346063",
+            "price0": "10975646.85384872006625851718657444",
+            "price1": "0.00000009111080315501769480168301706368458",
+            "createdAtTimestamp": "1620385158",
+            "createdAtBlockNumber": "12386752"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#162180",
+            "tickIdx": "162180",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "11041695.38004357178923950992876542",
+            "price1": "0.0000000905658022233949625544927046329007",
+            "createdAtTimestamp": "1661021342",
+            "createdAtBlockNumber": "15379268"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#162360",
+            "tickIdx": "162360",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "11242235.31519274539178527623769306",
+            "price1": "0.00000008895028185796831838276417960999947",
+            "createdAtTimestamp": "1622320366",
+            "createdAtBlockNumber": "12531452"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#163380",
+            "tickIdx": "163380",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "12449402.08544048003905273812912016",
+            "price1": "0.00000008032514277689653221387747068176594",
+            "createdAtTimestamp": "1621573261",
+            "createdAtBlockNumber": "12475712"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#163440",
+            "tickIdx": "163440",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "12524319.27899633154748542048805723",
+            "price1": "0.0000000798446588372296402504932642195008",
+            "createdAtTimestamp": "1638798273",
+            "createdAtBlockNumber": "13752628"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#164760",
+            "tickIdx": "164760",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "14291510.60442830906676680312108116",
+            "price1": "0.00000006997160955750500489292110869627287",
+            "createdAtTimestamp": "1622223048",
+            "createdAtBlockNumber": "12524153"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#165240",
+            "tickIdx": "165240",
+            "liquidityGross": "84908606264",
+            "liquidityNet": "84908606264",
+            "price0": "14994197.56270623237208714166948551",
+            "price1": "0.00000006669246525650784419493412994640978",
+            "createdAtTimestamp": "1654345191",
+            "createdAtBlockNumber": "14903225"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#165660",
+            "tickIdx": "165660",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "15637333.01519973557371619100821437",
+            "price1": "0.00000006394952381125247815621085105442384",
+            "createdAtTimestamp": "1622155696",
+            "createdAtBlockNumber": "12519122"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#166260",
+            "tickIdx": "166260",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "16604241.87655968319835391054045235",
+            "price1": "0.00000006022557412944619514096814654504648",
+            "createdAtTimestamp": "1645627674",
+            "createdAtBlockNumber": "14262970"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#166320",
+            "tickIdx": "166320",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "16704161.7919080020431333524703217",
+            "price1": "0.00000005986532053852771298497199691168357",
+            "createdAtTimestamp": "1624842492",
+            "createdAtBlockNumber": "12719499"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#166440",
+            "tickIdx": "166440",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "16905809.11551328414856495876533586",
+            "price1": "0.00000005915126529391424476385218143892541",
+            "createdAtTimestamp": "1621844533",
+            "createdAtBlockNumber": "12495890"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#166920",
+            "tickIdx": "166920",
+            "liquidityGross": "157513339323",
+            "liquidityNet": "157513339323",
+            "price0": "17737036.26241308688070468052371548",
+            "price1": "0.00000005637920480092383148515525235770498",
+            "createdAtTimestamp": "1651914762",
+            "createdAtBlockNumber": "14728917"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#167580",
+            "tickIdx": "167580",
+            "liquidityGross": "961652346063",
+            "liquidityNet": "-961652346063",
+            "price0": "18947113.4974420692742249287001723",
+            "price1": "0.00000005277848787547526517939660022517342",
+            "createdAtTimestamp": "1620385158",
+            "createdAtBlockNumber": "12386752"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#167880",
+            "tickIdx": "167880",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "19524109.72453677231560283966389352",
+            "price1": "0.00000005121872464910693546191804985253669",
+            "createdAtTimestamp": "1655126516",
+            "createdAtBlockNumber": "14956185"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#167940",
+            "tickIdx": "167940",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "19641600.62869428323836956949045366",
+            "price1": "0.0000000509123476698282254874688746430115",
+            "createdAtTimestamp": "1628957719",
+            "createdAtBlockNumber": "13024294"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#168000",
+            "tickIdx": "168000",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "19759798.56189201724525755946393078",
+            "price1": "0.00000005060780335729541785892546336504823",
+            "createdAtTimestamp": "1624146781",
+            "createdAtBlockNumber": "12667867"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#168120",
+            "tickIdx": "168120",
+            "liquidityGross": "39200903382876",
+            "liquidityNet": "8765433857558",
+            "price0": "19998332.55986342364011481601502345",
+            "price1": "0.00000005000416894791499493765744138544542",
+            "createdAtTimestamp": "1620315574",
+            "createdAtBlockNumber": "12381591"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#168360",
+            "tickIdx": "168360",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "20484073.83576012681727243105728538",
+            "price1": "0.00000004881841415032625585278872294423768",
+            "createdAtTimestamp": "1622987606",
+            "createdAtBlockNumber": "12581330"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#169200",
+            "tickIdx": "169200",
+            "liquidityGross": "1957485398494",
+            "liquidityNet": "1957485398494",
+            "price0": "22278977.00102387202333971203070349",
+            "price1": "0.00000004488536434837394603828937894399872",
+            "createdAtTimestamp": "1620319426",
+            "createdAtBlockNumber": "12381866"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#169260",
+            "tickIdx": "169260",
+            "liquidityGross": "10606743277866",
+            "liquidityNet": "10606743277866",
+            "price0": "22413045.96439714513327586519216069",
+            "price1": "0.00000004461687186955704341922405952766739",
+            "createdAtTimestamp": "1629008979",
+            "createdAtBlockNumber": "13028147"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#169620",
+            "tickIdx": "169620",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "23234573.31718043820307169755771717",
+            "price1": "0.00000004303930984007207039992364172345186",
+            "createdAtTimestamp": "1646546935",
+            "createdAtBlockNumber": "14331660"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#169860",
+            "tickIdx": "169860",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "23798919.93229042303160888475311146",
+            "price1": "0.0000000420187135737701257383095045552676",
+            "createdAtTimestamp": "1620947339",
+            "createdAtBlockNumber": "12428987"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#170280",
+            "tickIdx": "170280",
+            "liquidityGross": "131401952965",
+            "liquidityNet": "131401952965",
+            "price0": "24819710.07964578163685611595297142",
+            "price1": "0.00000004029055926886441922348066364564626",
+            "createdAtTimestamp": "1651963454",
+            "createdAtBlockNumber": "14732506"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#170340",
+            "tickIdx": "170340",
+            "liquidityGross": "91617271660",
+            "liquidityNet": "91617271660",
+            "price0": "24969068.49953419768993372520779514",
+            "price1": "0.00000004004955170909380034354163496023564",
+            "createdAtTimestamp": "1620272605",
+            "createdAtBlockNumber": "12378415"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#170640",
+            "tickIdx": "170640",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "25729451.25230788200118843915614038",
+            "price1": "0.0000000388659668717303846345322774646143",
+            "createdAtTimestamp": "1626948388",
+            "createdAtBlockNumber": "12875525"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#170760",
+            "tickIdx": "170760",
+            "liquidityGross": "3831739600517829",
+            "liquidityNet": "3831739600517829",
+            "price0": "26040048.99719884771968389867887897",
+            "price1": "0.00000003840238549887409696155906461340397",
+            "createdAtTimestamp": "1647820924",
+            "createdAtBlockNumber": "14426384"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#171180",
+            "tickIdx": "171180",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "27156966.29969061490511142974044698",
+            "price1": "0.00000003682296427975434341124362741359549",
+            "createdAtTimestamp": "1628388680",
+            "createdAtBlockNumber": "12981610"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#171420",
+            "tickIdx": "171420",
+            "liquidityGross": "21827785948180",
+            "liquidityNet": "21827785948180",
+            "price0": "27816584.26635901086128109356431363",
+            "price1": "0.00000003594977695408080912549711398530257",
+            "createdAtTimestamp": "1621005832",
+            "createdAtBlockNumber": "12433286"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#171720",
+            "tickIdx": "171720",
+            "liquidityGross": "1853247563277897",
+            "liquidityNet": "1853247563277897",
+            "price0": "28663682.38368003950911296680308723",
+            "price1": "0.00000003488735280465430427053556712216833",
+            "createdAtTimestamp": "1620916829",
+            "createdAtBlockNumber": "12426604"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#171780",
+            "tickIdx": "171780",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "28836172.80743083043488984309212354",
+            "price1": "0.00000003467866580901848093603363581514731",
+            "createdAtTimestamp": "1620623784",
+            "createdAtBlockNumber": "12404675"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172200",
+            "tickIdx": "172200",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "30073022.25996936812678723017999929",
+            "price1": "0.00000003325239450014022578428900813345799",
+            "createdAtTimestamp": "1620362262",
+            "createdAtBlockNumber": "12385087"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172260",
+            "tickIdx": "172260",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "30253993.71659011729894286920421797",
+            "price1": "0.00000003305348739633137316861848850379055",
+            "createdAtTimestamp": "1660921119",
+            "createdAtBlockNumber": "15371948"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172440",
+            "tickIdx": "172440",
+            "liquidityGross": "24342028274317",
+            "liquidityNet": "24342028274317",
+            "price0": "30803468.56887539617216033691644857",
+            "price1": "0.0000000324638765197509378990245988557739",
+            "createdAtTimestamp": "1621725953",
+            "createdAtBlockNumber": "12487081"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172560",
+            "tickIdx": "172560",
+            "liquidityGross": "506612638343",
+            "liquidityNet": "506612638343",
+            "price0": "31175318.23556637373511537974921705",
+            "price1": "0.00000003207665732371416877636090971181647",
+            "createdAtTimestamp": "1621549932",
+            "createdAtBlockNumber": "12473991"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172740",
+            "tickIdx": "172740",
+            "liquidityGross": "1177570850366022",
+            "liquidityNet": "1177570850366022",
+            "price0": "31741526.23914115258514904372512391",
+            "price1": "0.00000003150447122378377271334363649567693",
+            "createdAtTimestamp": "1620471218",
+            "createdAtBlockNumber": "12393240"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172800",
+            "tickIdx": "172800",
+            "liquidityGross": "3030520407273",
+            "liquidityNet": "3030520407273",
+            "price0": "31932538.30933502327482784817214694",
+            "price1": "0.00000003131601973863957525934702341395049",
+            "createdAtTimestamp": "1658646895",
+            "createdAtBlockNumber": "15203918"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#172920",
+            "tickIdx": "172920",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "32318017.74650856922259182974986445",
+            "price1": "0.00000003094249182742755218320843124913643",
+            "createdAtTimestamp": "1637048800",
+            "createdAtBlockNumber": "13625377"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173160",
+            "tickIdx": "173160",
+            "liquidityGross": "510546447132",
+            "liquidityNet": "510546447132",
+            "price0": "33102992.95019868014758277113428918",
+            "price1": "0.00000003020874884347876228277681377113391",
+            "createdAtTimestamp": "1620271295",
+            "createdAtBlockNumber": "12378293"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173220",
+            "tickIdx": "173220",
+            "liquidityGross": "99749623606255",
+            "liquidityNet": "99749623606255",
+            "price0": "33302197.96527553688010797482517859",
+            "price1": "0.0000000300280480298239727712257590129588",
+            "createdAtTimestamp": "1620336821",
+            "createdAtBlockNumber": "12383208"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173280",
+            "tickIdx": "173280",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "33502601.74319814205266170667043251",
+            "price1": "0.00000002984842812104957693414711790202808",
+            "createdAtTimestamp": "1625110575",
+            "createdAtBlockNumber": "12739441"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173400",
+            "tickIdx": "173400",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "33907034.48633657555701262300435812",
+            "price1": "0.00000002949240519405987126391149071657875",
+            "createdAtTimestamp": "1620593461",
+            "createdAtBlockNumber": "12402398"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173700",
+            "tickIdx": "173700",
+            "liquidityGross": "16976441980382",
+            "liquidityNet": "16976441980382",
+            "price0": "34939605.01341065627733928620852156",
+            "price1": "0.00000002862081582250789831846447283671908",
+            "createdAtTimestamp": "1621115540",
+            "createdAtBlockNumber": "12441566"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#173820",
+            "tickIdx": "173820",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "35361384.80257631179772826203761658",
+            "price1": "0.00000002827943547977632812446748555012594",
+            "createdAtTimestamp": "1623664594",
+            "createdAtBlockNumber": "12631911"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#-1740",
+            "tickIdx": "-1740",
+            "liquidityGross": "1289721951590699",
+            "liquidityNet": "1289721951590699",
+            "price0": "0.8403042077859023045607653103039314",
+            "price1": "1.190045213072152005202431109200761",
+            "createdAtTimestamp": "1659200074",
+            "createdAtBlockNumber": "15245005"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#174180",
+            "tickIdx": "174180",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "36657520.31640865803259235355450485",
+            "price1": "0.00000002727953204058866708059449100626584",
+            "createdAtTimestamp": "1622166087",
+            "createdAtBlockNumber": "12519939"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#174300",
+            "tickIdx": "174300",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "37100038.23223673113076301809891236",
+            "price1": "0.00000002695415012082349580159703035761951",
+            "createdAtTimestamp": "1622829152",
+            "createdAtBlockNumber": "12569491"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#174420",
+            "tickIdx": "174420",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "37547898.08347501711221066391464128",
+            "price1": "0.00000002663264925713921848612668305838296",
+            "createdAtTimestamp": "1624153630",
+            "createdAtBlockNumber": "12668392"
+          },
+          {
+            "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#174480",
+            "tickIdx": "174480",
+            "liquidityGross": "0",
+            "liquidityNet": "0",
+            "price0": "37773851.35649403663159881037795438",
+            "price1": "0.00000002647333973341537920809444393899214",
+            "createdAtTimestamp": "1622492522",
+            "createdAtBlockNumber": "12544232"
+          }
+        ]
+      }
+    ]
+  }
+}

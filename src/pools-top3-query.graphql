@@ -1,0 +1,29 @@
+query TopThreePools {
+  pools(orderBy: totalValueLockedUSD, orderDirection: desc, first: 3, skip: 1) {
+    id # pool address
+    feeTier # fee amount
+    totalValueLockedUSD # tvl USD
+    tick # current tick
+    token0 {
+      id
+      symbol
+      name
+    }
+    token1 {
+      id
+      symbol
+      name
+    }
+    #    ticks {
+    #      # array of ticks linked to the pool
+    #      id # tick id, format = <pool address>#<tick index>
+    #      tickIdx
+    #      liquidityGross # total liquidity pool has as tick lower or upper
+    #      liquidityNet # how much liquidity changes when tick crossed
+    #      price0 # calculated price of token0 of tick within this pool - constant
+    #      price1 # calculated price of token1 of tick within this pool - constant
+    #      createdAtTimestamp # created time
+    #      createdAtBlockNumber # created block
+    #    }
+  }
+}

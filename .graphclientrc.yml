@@ -1,0 +1,8 @@
+sources:
+  - name: uniswap-v3-subgraph
+    handler:
+      graphql:
+        endpoint: https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3
+
+documents:
+  - ./src/pools-top3-query.graphql
