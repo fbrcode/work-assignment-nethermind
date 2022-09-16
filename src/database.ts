@@ -16,6 +16,7 @@ export async function clearDbData() {
   try {
     await client.connect();
     await client.query(`delete from univ3.pool_history`);
+    await client.query(`delete from univ3.pool_ticks`);
     await client.query(`delete from univ3.pools_top`);
     return true;
   } catch (error) {
@@ -65,6 +66,34 @@ export async function addPoolsDb(pollsData: any) {
       );
     }
     console.log(`Top pools inserted on db (${pollsData.length} entries)`);
+    return true;
+  } catch (error) {
+    console.error(error);
+    return false;
+  } finally {
+    await client.end();
+  }
+}
+
+// TODO: not ideal implementation of connection handling
+// TODO: use bulk commit for better performance
+export async function addPoolTicksDb(poolId: string, poolTicksData: any) {
+  const client = getDbClient();
+  try {
+    await client.connect();
+    for (const tick of poolTicksData) {
+      await client.query(
+        `insert into univ3.pool_ticks (
+          id,
+          pool_id,
+          tick_index,
+          constant_price0,
+          constant_price1
+        ) values ($1, $2, $3, $4, $5)`,
+        [tick.id, poolId, tick.tickIdx, tick.price0, tick.price1]
+      );
+    }
+    console.log(`Pool ticks inserted on db (${poolTicksData.length} entries)`);
     return true;
   } catch (error) {
     console.error(error);

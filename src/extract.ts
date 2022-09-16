@@ -39,6 +39,22 @@ export async function getPools() {
   return resContent;
 }
 
+export async function getPoolTicks(poolId: string) {
+  const poolsTicksQuery = gql`
+    query {
+      ticks(where: { pool: "${poolId}" }) {
+        id
+        tickIdx
+        price0
+        price1
+      }
+    }
+  `;
+  const res = await client.query({ query: poolsTicksQuery });
+  const resContent = res.data.ticks;
+  return resContent;
+}
+
 export async function getPoolsHistory(poolId: string) {
   let resContent: any[] = [];
   let poolDayDatas: any[] = [];
