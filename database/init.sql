@@ -46,6 +46,37 @@ insert into univ3.pools_top (
 );
 */
 
+drop table if exists univ3.pool_ticks;
+create table univ3.pool_ticks (
+  id text,
+  pool_id text,
+  tick_index integer,
+  constant_price0 numeric,
+  constant_price1 numeric,
+  created_at timestamptz default now()
+);
+
+alter table univ3.pool_ticks 
+add constraint pool_ticks__pools_top__fk 
+foreign key (pool_id)
+references univ3.pools_top(id);
+
+/* sample insert
+insert into univ3.pool_ticks (
+  id,
+  pool_id,
+  tick_index,
+  constant_price0,
+  constant_price1
+) values (
+  '0x5777d92f208679db4b9778590fa3cab3ac9e2168#-254218',
+  '0x5777d92f208679db4b9778590fa3cab3ac9e2168',
+  '-254218',
+  0.9,
+  1.1
+);
+*/
+
 drop table if exists univ3.pool_history;
 create table univ3.pool_history (
   id text,
@@ -144,8 +175,9 @@ from univ3.pool_history h;
 */
 
 drop view if exists univ3.vw_history_top_pools;
-create view univ3.vw_history_top_pools as
+create or replace view univ3.vw_history_top_pools as
 select
+  t.id as pool_id,
   t.id_tokens || ' (' || round(t.fee/10000,2) || '%)' as pool,
   round(t.current_tvl_usd,2) tvl_usd,
   t.token0_symbol,
@@ -154,10 +186,47 @@ select
   t.token1_name,
   h.hist_date,
   h.tick_id,
-  h.volumetoken0,
-  h.volumetoken1,
-  h.tokenprice0,
-  h.tokenprice1
+  h.volumetoken0::int as token0_amount,
+  h.volumetoken1::int as token1_amount,
+  h.tokenprice0,6 as token0_price,
+  h.tokenprice1,6 as token1_price
 from univ3.pools_top t
 inner join univ3.pool_history h on h.pool_id = t.id
 order by t.current_tvl_usd desc, h.hist_date;
+
+/*
+SELECT
+  hist_date AS "time",
+  token0_amount AS "Dai Stablecoin",
+  token1_amount AS "USD Coin"
+FROM univ3.vw_history_top_pools
+WHERE
+  pool_id = '0x5777d92f208679db4b9778590fa3cab3ac9e2168'
+ORDER BY 1
+*/
+
+drop view if exists univ3.vw_history_token_amount_difference;
+create or replace view univ3.vw_history_token_amount_difference as
+select
+	pool,
+	pool_id,
+	hist_date,
+	tick_id,
+	token0_amount,
+	token1_amount,
+	case 
+		when (token0_amount - token1_amount) >= 0 
+		then token0_amount - token1_amount
+		else 0
+	end as token0_larger_diff,
+	case 
+		when (token1_amount - token0_amount) >= 0 
+		then token1_amount - token0_amount
+		else 0
+	end as token1_larger_diff,
+	case 
+		when (token0_amount - token1_amount) >= 0 
+		then token0_symbol
+		else token1_symbol
+	end as leading_token_amount
+from univ3.vw_history_top_pools;
