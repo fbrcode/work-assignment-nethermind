@@ -1,0 +1,8 @@
+curl 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'DNT: 1' \
+-H 'Origin: https://www.graphqlbin.com' \
+--data-binary '{"query":"{\n  ticks(where: { pool: \"0x5777d92f208679db4b9778590fa3cab3ac9e2168\" }) {\n    id\n    tickIdx\n    price0\n    price1\n  }\n}"}' \
+--compressed > getPoolTicks.json
