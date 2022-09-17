@@ -25,11 +25,13 @@ export async function getPools() {
           id
           symbol
           name
+          decimals
         }
         token1 {
           id
           symbol
           name
+          decimals
         }
       }
     }
@@ -40,9 +42,17 @@ export async function getPools() {
 }
 
 export async function getPoolTicks(poolId: string) {
-  const poolsTicksQuery = gql`
+  let resContent: any[] = [];
+  let ticksData: any[] = [];
+  let skipPagination = 0;
+
+  do {
+    const poolsTicksQuery = gql`
     query {
-      ticks(where: { pool: "${poolId}" }) {
+      ticks(
+        skip: ${skipPagination}
+        where: { pool: "${poolId}" }
+      ) {
         id
         tickIdx
         price0
@@ -50,9 +60,17 @@ export async function getPoolTicks(poolId: string) {
       }
     }
   `;
-  const res = await client.query({ query: poolsTicksQuery });
-  const resContent = res.data.ticks;
-  return resContent;
+    const res = await client.query({ query: poolsTicksQuery });
+    resContent = res.data.ticks;
+    if (resContent.length === 0) {
+      return ticksData;
+    }
+    ticksData = ticksData.concat(resContent);
+    console.log(`Fetching +100... (sum: ${skipPagination})`);
+    skipPagination += 100;
+  } while (resContent.length > 0);
+
+  return ticksData;
 }
 
 export async function getPoolsHistory(poolId: string) {
@@ -96,6 +114,7 @@ export async function getPoolsHistory(poolId: string) {
       return poolDayDatas;
     }
     poolDayDatas = poolDayDatas.concat(resContent);
+    console.log(`Fetching +100... (sum: ${skipPagination})`);
     skipPagination += 100;
   } while (resContent.length > 0);
 
