@@ -194,8 +194,8 @@ select
   h.tick_index,
   h.volumetoken0::int as token0_amount,
   h.volumetoken1::int as token1_amount,
-  h.tokenprice0,6 as token0_price,
-  h.tokenprice1,6 as token1_price
+  trunc(h.tokenprice0,12) as token0_price,
+  trunc(h.tokenprice1,12) as token1_price
 from univ3.pools_top t
 inner join univ3.pool_history h on h.pool_id = t.id
 order by t.current_tvl_usd desc, h.hist_date;
@@ -236,3 +236,70 @@ select
 		else token1_symbol
 	end as leading_token_amount
 from univ3.vw_history_top_pools;
+
+-- specific DAI/USDC (0.01%)
+drop view if exists  univ3.vw_history_prices_by_tick_range_pool1;
+create or replace view univ3.vw_history_prices_by_tick_range_pool1 as
+select
+	h.pool_id,
+	h.pool,
+	h.hist_date,
+	h.tick_index,
+	h.token0_symbol,
+	t.constant_price0 * 1000000000000 as DAI_tick_price, 
+	h.token1_symbol,
+	t.constant_price1 / 1000000000000 as USDC_tick_price
+from univ3.vw_history_top_pools h
+inner join univ3.pool_ticks t on t.pool_id = h.pool_id and t.tick_index = h.tick_index 
+where h.pool_id = '0x5777d92f208679db4b9778590fa3cab3ac9e2168';
+
+-- specific DAI/USDC (0.05%)
+drop view if exists univ3.vw_history_prices_by_tick_range_pool2;
+create or replace view univ3.vw_history_prices_by_tick_range_pool2 as
+select
+	h.pool_id,
+	h.pool,
+	h.hist_date,
+	h.tick_index,
+	t.tick_index as tick_index_range,
+	h.token0_symbol,
+	t.constant_price0 * 1000000000000 as DAI_tick_price, 
+	h.token1_symbol,
+	t.constant_price1 / 1000000000000 as USDC_tick_price
+from univ3.vw_history_top_pools h
+left join univ3.pool_ticks t 
+	on h.pool_id = t.pool_id 
+	and t.tick_index::text like substring(h.tick_index::text,0,length(h.tick_index::text)) || '%'
+where h.pool_id = '0x6c6bc977e13df9b0de53b251522280bb72383700';
+
+-- specific USDC/WETH (0.30%)
+drop view if exists univ3.vw_history_prices_by_tick_range_pool3;
+create or replace view univ3.vw_history_prices_by_tick_range_pool3 as
+select 
+	pool_id,
+	pool,
+	hist_date,
+	tick_index,
+	tick_index_range,
+	token0_symbol,
+	USDC_tick_price, 
+	token1_symbol,
+	WETH_tick_price
+from (
+	select
+		h.pool_id,
+		h.pool,
+		h.hist_date,
+		h.tick_index,
+		t.tick_index as tick_index_range,
+		rank() over (partition by h.pool_id, h.hist_date order by t.tick_index asc) as pool_index_rank,
+		h.token0_symbol,
+		t.constant_price0 / 1000000000000 as USDC_tick_price, 
+		h.token1_symbol,
+		t.constant_price1 * 1000000000000 as WETH_tick_price
+	from univ3.vw_history_top_pools h
+	left join univ3.pool_ticks t 
+		on h.pool_id = t.pool_id 
+		and t.tick_index::text like substring(h.tick_index::text,0,length(h.tick_index::text)-1) || '%'
+	where h.pool_id = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'
+) x where x.pool_index_rank = 1;
