@@ -45,11 +45,13 @@ export async function addPoolsDb(pollsData: any) {
           token0_id, 
           token0_symbol, 
           token0_name, 
+          token0_decimals,
           token1_id, 
           token1_symbol, 
-          token1_name
+          token1_name,
+          token1_decimals
         ) 
-        values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)`,
+        values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)`,
         [
           pool.id,
           tokens,
@@ -59,9 +61,11 @@ export async function addPoolsDb(pollsData: any) {
           pool.token0.id,
           pool.token0.symbol,
           pool.token0.name,
+          pool.token0.decimals,
           pool.token1.id,
           pool.token1.symbol,
           pool.token1.name,
+          pool.token1.decimals,
         ]
       );
     }
@@ -117,7 +121,7 @@ export async function addPoolHistoryDb(poolId: string, poolHistoryData: any) {
           pool_id,
           unix_date,
           hist_date,
-          tick_id,
+          tick_index,
           volumeToken0,
           volumeToken1,
           tokenPrice0,
