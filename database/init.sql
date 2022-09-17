@@ -11,9 +11,11 @@ create table univ3.pools_top (
   token0_id text,
   token0_symbol text,
   token0_name text,
+  token0_decimals integer,
   token1_id text,
   token1_symbol text,
   token1_name text,
+  token1_decimals integer,
   created_at timestamptz default now()
 );
 
@@ -27,9 +29,11 @@ insert into univ3.pools_top (
   token0_id, 
   token0_symbol, 
   token0_name, 
+  token0_decimals,
   token1_id, 
   token1_symbol, 
-  token1_name
+  token1_name,
+  token1_decimals
 ) values (
   '0x5777d92f208679db4b9778590fa3cab3ac9e2168',
   'DAI / USDC',
@@ -40,9 +44,11 @@ insert into univ3.pools_top (
   '0x6b175474e89094c44da98b954eedeac495271d0f',
   'DAI',
   'Dai Stablecoin',
+  18,
   '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
   'USDC',
-  'USD Coin'
+  'USD Coin',
+  6
 );
 */
 
@@ -83,7 +89,7 @@ create table univ3.pool_history (
   pool_id text,
   unix_date integer,
   hist_date date,
-  tick_id text,
+  tick_index integer,
   volumeToken0 numeric,
   volumeToken1 numeric,
   tokenPrice0 numeric,
@@ -185,7 +191,7 @@ select
   t.token1_symbol,
   t.token1_name,
   h.hist_date,
-  h.tick_id,
+  h.tick_index,
   h.volumetoken0::int as token0_amount,
   h.volumetoken1::int as token1_amount,
   h.tokenprice0,6 as token0_price,
@@ -211,7 +217,7 @@ select
 	pool,
 	pool_id,
 	hist_date,
-	tick_id,
+	tick_index,
 	token0_amount,
 	token1_amount,
 	case 
