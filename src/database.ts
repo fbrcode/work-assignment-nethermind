@@ -1,13 +1,15 @@
 import { Client } from 'pg';
+import { logger } from './logger';
+import config from './config';
 
 // TODO: clear text just for demo purposes
 function getDbClient() {
   return new Client({
-    host: 'localhost',
-    user: 'postgres',
-    database: 'db',
-    password: 'postgres',
-    port: 5430,
+    host: config.PG_HOST,
+    user: config.PG_USER,
+    database: config.PG_DATABASE,
+    password: config.PG_PASSWORD,
+    port: config.PG_PORT,
   });
 }
 
@@ -20,7 +22,7 @@ export async function clearDbData() {
     await client.query(`delete from univ3.pools_top`);
     return true;
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return false;
   } finally {
     await client.end(); // closes connection
@@ -69,10 +71,10 @@ export async function addPoolsDb(pollsData: any) {
         ]
       );
     }
-    console.log(`Top pools inserted on db (${pollsData.length} entries)`);
+    logger.info(`Top pools inserted on db (${pollsData.length} entries)`);
     return true;
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return false;
   } finally {
     await client.end();
@@ -97,10 +99,10 @@ export async function addPoolTicksDb(poolId: string, poolTicksData: any) {
         [tick.id, poolId, tick.tickIdx, tick.price0, tick.price1]
       );
     }
-    console.log(`Pool ticks inserted on db (${poolTicksData.length} entries)`);
+    logger.info(`Pool ticks inserted on db (${poolTicksData.length} entries)`);
     return true;
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return false;
   } finally {
     await client.end();
@@ -152,10 +154,10 @@ export async function addPoolHistoryDb(poolId: string, poolHistoryData: any) {
         ]
       );
     }
-    console.log(`Pool history inserted on db (${poolHistoryData.length} entries)`);
+    logger.info(`Pool history inserted on db (${poolHistoryData.length} entries)`);
     return true;
   } catch (error) {
-    console.error(error);
+    logger.error(error);
     return false;
   } finally {
     await client.end();

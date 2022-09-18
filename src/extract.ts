@@ -1,20 +1,21 @@
 import fetch from 'cross-fetch';
 import { ApolloClient, InMemoryCache, gql, HttpLink } from '@apollo/client';
 import config from './config';
+import { logger } from './logger';
 
-function getGraphQLClient() {
+export function getGraphQLClient() {
   return new ApolloClient({
     link: new HttpLink({ uri: config.GRAPHQL_API_ENDPOINT, fetch }),
     cache: new InMemoryCache(),
   });
 }
 
-const client = getGraphQLClient();
-
+// skipping the first one, since it doesn't match Uniswap interface (UMIIE/UMIIE2)
 export async function getPools() {
+  let resContent: any[] = [];
   const top3PoolsQuery = gql`
     query {
-      pools(orderBy: totalValueLockedUSD, orderDirection: desc, first: 3, skip: 1) {
+      pools(orderBy: totalValueLockedUSD, orderDirection: desc, first: ${config.NUMBER_OF_POOLS}, skip: 1) {
         id
         feeTier
         totalValueLockedUSD
@@ -34,8 +35,13 @@ export async function getPools() {
       }
     }
   `;
-  const res = await client.query({ query: top3PoolsQuery });
-  const resContent = res.data.pools;
+
+  try {
+    const res = await getGraphQLClient().query({ query: top3PoolsQuery });
+    resContent = res.data.pools;
+  } catch (e) {
+    logger.error(e);
+  }
   return resContent;
 }
 
@@ -43,9 +49,10 @@ export async function getPoolTicks(poolId: string) {
   let resContent: any[] = [];
   let ticksData: any[] = [];
   let skipPagination = 0;
-
-  do {
-    const poolsTicksQuery = gql`
+  try {
+    do {
+      if (skipPagination > 0) logger.info(`Fetching +100 (ticks)...`);
+      const poolsTicksQuery = gql`
     query {
       ticks(
         skip: ${skipPagination}
@@ -58,16 +65,18 @@ export async function getPoolTicks(poolId: string) {
       }
     }
   `;
-    const res = await client.query({ query: poolsTicksQuery });
-    resContent = res.data.ticks;
-    if (resContent.length === 0) {
-      return ticksData;
-    }
-    ticksData = ticksData.concat(resContent);
-    console.log(`Fetching +100...`);
-    skipPagination += 100;
-  } while (resContent.length > 0);
 
+      const res = await getGraphQLClient().query({ query: poolsTicksQuery });
+      resContent = res.data.ticks;
+      if (resContent.length === 0) {
+        return ticksData;
+      }
+      ticksData = ticksData.concat(resContent);
+      skipPagination += 100;
+    } while (resContent.length > 0);
+  } catch (e) {
+    logger.error(e);
+  }
   return ticksData;
 }
 
@@ -76,9 +85,10 @@ export async function getPoolsHistory(poolId: string) {
   let poolDayDatas: any[] = [];
   let poolsHistoryQuery: any;
   let skipPagination = 0;
-
-  do {
-    poolsHistoryQuery = gql`
+  try {
+    do {
+      if (skipPagination > 0) logger.info(`Fetching +100 (history)...`);
+      poolsHistoryQuery = gql`
       query {
         poolDayDatas(
           skip: ${skipPagination}
@@ -106,15 +116,17 @@ export async function getPoolsHistory(poolId: string) {
       }
     `;
 
-    const res = await client.query({ query: poolsHistoryQuery });
-    resContent = res.data.poolDayDatas;
-    if (resContent.length === 0) {
-      return poolDayDatas;
-    }
-    poolDayDatas = poolDayDatas.concat(resContent);
-    console.log(`Fetching +100...`);
-    skipPagination += 100;
-  } while (resContent.length > 0);
+      const res = await getGraphQLClient().query({ query: poolsHistoryQuery });
+      resContent = res.data.poolDayDatas;
+      if (resContent.length === 0) {
+        return poolDayDatas;
+      }
+      poolDayDatas = poolDayDatas.concat(resContent);
+      skipPagination += 100;
+    } while (resContent.length > 0);
+  } catch (e) {
+    logger.error(e);
+  }
 
   return poolDayDatas;
 }
