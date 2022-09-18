@@ -1,17 +1,15 @@
 import fetch from 'cross-fetch';
 import { ApolloClient, InMemoryCache, gql, HttpLink } from '@apollo/client';
+import config from './config';
 
 function getGraphQLClient() {
-  const THE_GRAPH_API_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3';
   return new ApolloClient({
-    link: new HttpLink({ uri: THE_GRAPH_API_ENDPOINT, fetch }),
+    link: new HttpLink({ uri: config.GRAPHQL_API_ENDPOINT, fetch }),
     cache: new InMemoryCache(),
   });
 }
 
 const client = getGraphQLClient();
-
-const unixStartTimestamp = 1655164800; // Jul 14, 2022 (3 months)
 
 export async function getPools() {
   const top3PoolsQuery = gql`
@@ -66,7 +64,7 @@ export async function getPoolTicks(poolId: string) {
       return ticksData;
     }
     ticksData = ticksData.concat(resContent);
-    console.log(`Fetching +100... (sum: ${skipPagination})`);
+    console.log(`Fetching +100...`);
     skipPagination += 100;
   } while (resContent.length > 0);
 
@@ -88,7 +86,7 @@ export async function getPoolsHistory(poolId: string) {
           orderDirection: asc
           where: { 
             pool: "${poolId}", 
-            date_gt: ${unixStartTimestamp} 
+            date_gt: ${config.UNIX_TIMESTAMP_START_PERIOD} 
           }
         ) {
           id
@@ -114,7 +112,7 @@ export async function getPoolsHistory(poolId: string) {
       return poolDayDatas;
     }
     poolDayDatas = poolDayDatas.concat(resContent);
-    console.log(`Fetching +100... (sum: ${skipPagination})`);
+    console.log(`Fetching +100...`);
     skipPagination += 100;
   } while (resContent.length > 0);
 
