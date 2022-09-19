@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "ts-node ./src/index.ts | pino-pretty -i time,hostname,module,__in,name,pid",
     "debug": "LOG_LEVEL=debug ts-node ./src/index.ts | pino-pretty -i time,hostname,module,__in,name,pid",
-    "test": "LOG_LEVEL=silent jest --detectOpenHandles"
+    "test": "LOG_LEVEL=silent jest --verbose --detectOpenHandles"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
