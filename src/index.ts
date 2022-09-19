@@ -1,4 +1,4 @@
-import { getPools, getPoolTicks, getPoolsHistory } from './extract';
+import { getTopPools, getPoolTicks, getPoolsHistory } from './extract';
 import { clearDbData, addPoolsDb, addPoolTicksDb, addPoolHistoryDb } from './database';
 import { logger } from './logger';
 
@@ -9,7 +9,7 @@ async function main() {
 
   // get top pools and adds to db
   logger.info(`Fetching top pools for analysis...`);
-  const pollsData = await getPools();
+  const pollsData = await getTopPools();
   logger.debug(pollsData);
   if (!(await addPoolsDb(pollsData))) {
     logger.error(
