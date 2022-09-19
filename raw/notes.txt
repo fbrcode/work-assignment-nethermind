@@ -1,5 +1,28 @@
 unix timestamp mid June 2022 onwards... 1655164800
 
+https://docs.uniswap.org/protocol/concepts/V3-overview/concentrated-liquidity
+https://docs.uniswap.org/sdk/subgraph/subgraph-data
+https://docs.uniswap.org/sdk/subgraph/subgraph-examples
+https://docs.uniswap.org/protocol/reference/core/libraries/Tick
+https://ethereum.stackexchange.com/questions/120828/uniswap-v3-calculate-volume-to-reach-target-price
+https://ryanjameskim.medium.com/uniswap-v3-part-2-ticks-and-fee-acounting-explainer-with-toy-example-e9bf4d706884
+https://uniswapv3book.com/docs/introduction/uniswap-v3/
+https://credmark.com/blog/a-technical-analysis-of-uniswap-v3
+https://app.uniswap.org/#/swap
+https://info.uniswap.org/#/pools
+https://info.uniswap.org/#/pools/0x5777d92f208679db4b9778590fa3cab3ac9e2168
+https://info.uniswap.org/#/tokens
+https://info.uniswap.org/#/tokens/0x6b175474e89094c44da98b954eedeac495271d0f
+https://info.uniswap.org/#/tokens/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+https://app.uniswap.org/#/add/0x6b175474e89094c44da98b954eedeac495271d0f/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/100?maxPrice=1.001013
+https://etherscan.io/address/0x5777d92f208679db4b9778590fa3cab3ac9e2168#tokentxns
+https://etherscan.io/address/0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8#tokentxns
+https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f?a=0x5777d92f208679db4b9778590fa3cab3ac9e2168
+https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48?a=0x5777d92f208679db4b9778590fa3cab3ac9e2168
+https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2?a=0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8
+
+https://github.com/Uniswap/v3-subgraph/blob/main/schema.graphql
+
 query HistoryQuery {
   poolHourDatas(
     first: 3
