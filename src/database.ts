@@ -3,7 +3,7 @@ import { logger } from './logger';
 import config from './config';
 
 // TODO: clear text just for demo purposes
-function getDbClient() {
+export function getDbClient() {
   return new Client({
     host: config.PG_HOST,
     user: config.PG_USER,

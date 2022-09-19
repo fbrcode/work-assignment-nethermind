@@ -2,7 +2,7 @@ import { getTopPools, getPoolTicks, getPoolsHistory } from './extract';
 import { clearDbData, addPoolsDb, addPoolTicksDb, addPoolHistoryDb } from './database';
 import { logger } from './logger';
 
-async function main() {
+export async function main() {
   // clear database data
   logger.info(`Refresh db data...`);
   await clearDbData();
@@ -11,6 +11,10 @@ async function main() {
   logger.info(`Fetching top pools for analysis...`);
   const pollsData = await getTopPools();
   logger.debug(pollsData);
+  if (!pollsData) {
+    logger.error(`No pools data fetched.\nPlease check source endpoint.\nExiting...`);
+    return;
+  }
   if (!(await addPoolsDb(pollsData))) {
     logger.error(
       `Not able to add pools data properly.\nPlease check db connection/insert.\nExiting...`

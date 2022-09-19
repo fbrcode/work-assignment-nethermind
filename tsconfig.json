@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es6"],
+    "target": "es6",
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}

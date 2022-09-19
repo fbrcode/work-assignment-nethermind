@@ -9,40 +9,48 @@ import {
   poolHistoryQuery,
   poolHistoryVariables,
 } from './queries';
+import {
+  PoolGroup,
+  PoolData,
+  TickGroup,
+  TickPoolData,
+  PoolDayHistoryGroup,
+  PoolDayHistoryData,
+} from './types';
 
-async function fetchGql(query: string, variables: any) {
+export async function fetchGql(query: string, variables: any) {
   const result = await fetch(config.GRAPHQL_API_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ query, variables }),
-  }).then((res) => res.json());
-  return result;
+  });
+  return await result.json();
 }
 
-// skipping the first one, since it doesn't match Uniswap interface (UMIIE/UMIIE2)
-export async function getTopPools() {
-  let resContent: any[] = [];
+// getTopPools skips the first item, since it doesn't match Uniswap UI (UMIIE/UMIIE2 is the first fetching with graphql)
+export async function getTopPools(): Promise<PoolGroup> {
+  let resContent: PoolGroup = [];
   try {
-    const res = await fetchGql(topPoolsQuery, topPoolsVariables);
-    resContent = res.data.pools;
+    const response: PoolData = await fetchGql(topPoolsQuery, topPoolsVariables);
+    resContent = response.data.pools;
   } catch (e) {
     logger.error(e);
   }
   return resContent;
 }
 
-export async function getPoolTicks(poolId: string) {
+export async function getPoolTicks(poolId: string): Promise<TickGroup> {
   ticksByPoolVariables.poolId = poolId;
-  let resContent: any[] = [];
-  let ticksData: any[] = [];
+  let resContent: TickGroup = [];
+  let ticksData: TickGroup = [];
   ticksByPoolVariables.skipPagination = 0;
 
   try {
     do {
-      const res = await fetchGql(ticksByPoolQuery, ticksByPoolVariables);
-      resContent = res.data.ticks;
+      const response: TickPoolData = await fetchGql(ticksByPoolQuery, ticksByPoolVariables);
+      resContent = response.data.ticks;
       if (resContent.length === 0) {
         return ticksData;
       }
@@ -56,15 +64,15 @@ export async function getPoolTicks(poolId: string) {
   return ticksData;
 }
 
-export async function getPoolsHistory(poolId: string) {
+export async function getPoolsHistory(poolId: string): Promise<PoolDayHistoryGroup> {
   poolHistoryVariables.poolId = poolId;
-  let resContent: any[] = [];
-  let poolDayDatas: any[] = [];
+  let resContent: PoolDayHistoryGroup = [];
+  let poolDayDatas: PoolDayHistoryGroup = [];
   poolHistoryVariables.skipPagination = 0;
   try {
     do {
-      const res = await fetchGql(poolHistoryQuery, poolHistoryVariables);
-      resContent = res.data.poolDayDatas;
+      const response: PoolDayHistoryData = await fetchGql(poolHistoryQuery, poolHistoryVariables);
+      resContent = response.data.poolDayDatas;
       if (resContent.length === 0) {
         return poolDayDatas;
       }
