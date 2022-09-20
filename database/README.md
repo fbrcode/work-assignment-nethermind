@@ -49,7 +49,7 @@ source .env
 # startup
 docker-compose up -d
 # or refresh (erase all data) with..
-docker-compose down && docker volume rm data_db && docker-compose up -d
+docker-compose down && docker volume rm database_db && docker-compose up -d
 # install or refresh (2nd run onwards) all tables
 psql -f init.sql
 ```
