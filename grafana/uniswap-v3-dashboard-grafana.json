@@ -539,7 +539,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"DAI\",\n  token1_price AS \"USDC\"\nFROM univ3.vw_history_prices_by_tick_range_all\nWHERE\n  pool_id = '0x5777d92f208679db4b9778590fa3cab3ac9e2168'\nORDER BY 1",
+          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"DAI\",\n  token1_price AS \"USDC\"\nFROM univ3.vw_history_top_pools\nWHERE\n  pool_id = '0x5777d92f208679db4b9778590fa3cab3ac9e2168'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -571,7 +571,7 @@
               }
             ]
           ],
-          "table": "univ3.vw_history_prices_by_tick_range_all",
+          "table": "univ3.vw_history_top_pools",
           "timeColumn": "hist_date",
           "timeColumnType": "date",
           "where": [
@@ -1267,7 +1267,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"DAI\",\n  token1_price AS \"USDC\"\nFROM univ3.vw_history_prices_by_tick_range_all\nWHERE\n  pool_id = '0x6c6bc977e13df9b0de53b251522280bb72383700'\nORDER BY 1",
+          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"DAI\",\n  token1_price AS \"USDC\"\nFROM univ3.vw_history_top_pools\nWHERE\n  pool_id = '0x6c6bc977e13df9b0de53b251522280bb72383700'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -1299,7 +1299,7 @@
               }
             ]
           ],
-          "table": "univ3.vw_history_prices_by_tick_range_all",
+          "table": "univ3.vw_history_top_pools",
           "timeColumn": "hist_date",
           "timeColumnType": "date",
           "where": [
@@ -1955,30 +1955,6 @@
                 }
               }
             ]
-          },
-          {
-            "__systemRef": "hideSeriesFrom",
-            "matcher": {
-              "id": "byNames",
-              "options": {
-                "mode": "exclude",
-                "names": [
-                  "WETH"
-                ],
-                "prefix": "All except:",
-                "readOnly": true
-              }
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": true
-                }
-              }
-            ]
           }
         ]
       },
@@ -2011,7 +1987,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"USDC\",\n  token1_price AS \"WETH\"\nFROM univ3.vw_history_prices_by_tick_range_all\nWHERE\n  pool_id = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'\nORDER BY 1",
+          "rawSql": "SELECT\n  hist_date AS \"time\",\n  token0_price AS \"USDC\",\n  token1_price AS \"WETH\"\nFROM univ3.vw_history_top_pools\nWHERE\n  pool_id = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -2043,7 +2019,7 @@
               }
             ]
           ],
-          "table": "univ3.vw_history_prices_by_tick_range_all",
+          "table": "univ3.vw_history_top_pools",
           "timeColumn": "hist_date",
           "timeColumnType": "date",
           "where": [
@@ -2146,30 +2122,6 @@
                 "value": {
                   "fixedColor": "dark-red",
                   "mode": "fixed"
-                }
-              }
-            ]
-          },
-          {
-            "__systemRef": "hideSeriesFrom",
-            "matcher": {
-              "id": "byNames",
-              "options": {
-                "mode": "exclude",
-                "names": [
-                  "WETH Tick Price"
-                ],
-                "prefix": "All except:",
-                "readOnly": true
-              }
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": true
                 }
               }
             ]
