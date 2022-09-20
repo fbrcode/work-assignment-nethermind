@@ -24,7 +24,7 @@ This is a summary on how the process works:
 In order tp run this small PoC, please follow these steps (Linux/Mac):
 
 1. `git clone <https://github.com/fbrcode/work-assignment-nethermind.git>`
-2. `cd work-assignment-nethermind/database`
+2. `cd work-assignment-nethermind/database` (for detailed information go to [database readme](./database/README.md))
 3. `source .env`
 4. `cp .env.example .env`
 5. `docker compose up -d`
@@ -34,7 +34,7 @@ In order tp run this small PoC, please follow these steps (Linux/Mac):
 9. `cp .env.example .env`
 10. `yarn test`
 11. `yarn dev`
-12. `cd grafana`
+12. `cd grafana` (for detailed information go to [grafana readme](./grafana/README.md))
 13. `chmod -R 777 grafana`
 14. `docker compose up -d`
 
