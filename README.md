@@ -1,35 +1,52 @@
-# Nethermind Assignment
+# Nethermind Work Assignment - Uniswap V3 Protocol
 
-nethermind.io
+This small PoC for [nethermind.io](https://nethermind.io/) has the intent to capture events from crypto ecosystem, more specifically observing Uniswap V3 Protocol historical data.
 
-Pre-requisites
+## Prerequisites
 
-- Node (nvm package manager)
-- Yarn
-- Postgres Client (psql)
+In order to run the project locally, the following needs to be installed in your local host for your specific platform:
 
-Introduction
+- [Node.Js](https://nodejs.org/en/) (ideally through [NVM](https://github.com/nvm-sh/nvm))
+- [Yarn](https://classic.yarnpkg.com/en/)
+- [Postgres Client](https://www.compose.com/articles/postgresql-tips-installing-the-postgresql-client/) (psql)
+- [Docker / Docker Compose](https://docs.docker.com/compose/install/)
 
-How it works
+## How it works
 
-- build relational structure for uniswap v3 data
-- grab blockchain event data from **the graph** endpoint provided by uniswap protocol (https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3) (https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3/graphql) (https://github.com/Uniswap/v3-subgraph/blob/main/schema.graphql)
+This is a summary on how the process works:
 
-Steps and sequence...
+1. Data is [fetched](https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3) from the Uniswap V3 (via [The Graph](https://thegraph.com/en/)) graphql endpoint, which allows to get [certain data nodes and combinations](https://github.com/Uniswap/v3-subgraph/blob/main/schema.graphql).
+2. This data is then loaded in a PostgreSQL schema with some predefined tables to accommodate the data and views to perform certain transformations.
+3. Once this data is in the database, we can view data plotted in [Grafana Open Source](https://grafana.com/oss/) tool on dashboard visualization.
 
--- (database) startup docker
--- (database) psql -f init.sql
+## Installation steps
 
--- yarn dev (wipe data and load)
+In order tp run this small PoC, please follow these steps (Linux/Mac):
 
-Conclusions
+1. `git clone <https://github.com/fbrcode/work-assignment-nethermind.git>`
+2. `cd work-assignment-nethermind/database`
+3. `source .env`
+4. `cp .env.example .env`
+5. `docker compose up -d`
+6. `psql -f init.sql`
+7. `cd ..`
+8. `yarn`
+9. `cp .env.example .env`
+10. `yarn test`
+11. `yarn dev`
+12. `cd grafana`
+13. `chmod -R 777 grafana`
+14. `docker compose up -d`
 
-Going forward
+Then, import the dashboard data from file `./grafana/uniswap-v3-dashboard-grafana.json`
 
-- Other databases (TimescaleDB)
-- Other graph options
-- Period selection
-- API
-- Interface
-- Dynamic graph generation of pool data (i.e.: <https://www.chartjs.org/>)
-- Insights/Trends analysis/generation
+## Going forward
+
+These are some action points that would enhance the project:
+
+- Other databases (i.e. [TimescaleDB](https://www.timescale.com/))
+- Other graph options (i.e. [Chart.js](https://www.chartjs.org/))
+- Time period selection and automated fetching
+- API and Interface interactions
+- Dynamic and automated graph generation of pool data
+- Insights/Trends analysis and/or generation
