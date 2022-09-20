@@ -17,3 +17,11 @@ docker-compose up -d
 To change the target port, please modify the `docker-compose.yml` file accordingly.
 
 To stop the container, just run `docker-compose down`
+
+## Access
+
+To access Grafana tool, go to <http://localhost:3000> and login with `admin/admin`.
+
+If the dashboard don't display correctly, it can be imported again with by going to the **dashboards menu** and picking the option **import**.
+
+Then the file `uniswap-v3-dashboard-grafana.json` can be loaded with all the existing graphs.
