@@ -729,3 +729,21 @@ query TicksQuery {
     ]
   }
 }
+
+
+-- steps:
+
+git clone https://github.com/fbrcode/work-assignment-nethermind.git
+cd work-assignment-nethermind/database
+source .env
+cp .env.example .env
+docker compose up -d
+psql -f init.sql
+cd ..
+yarn
+cp .env.example .env
+yarn test
+yarn dev
+cd grafana
+chmod -R 777 grafana
+# import dashboard data from file ./grafana/uniswap-v3-dashboard-grafana.json
