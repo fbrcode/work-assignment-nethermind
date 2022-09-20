@@ -21,17 +21,17 @@ create table univ3.pools_top (
 
 /* sample insert
 insert into univ3.pools_top (
-  id, 
-  id_tokens, 
-  fee, 
-  current_tvl_usd, 
-  current_tick, 
-  token0_id, 
-  token0_symbol, 
-  token0_name, 
+  id,
+  id_tokens,
+  fee,
+  current_tvl_usd,
+  current_tick,
+  token0_id,
+  token0_symbol,
+  token0_name,
   token0_decimals,
-  token1_id, 
-  token1_symbol, 
+  token1_id,
+  token1_symbol,
   token1_name,
   token1_decimals
 ) values (
@@ -62,8 +62,8 @@ create table univ3.pool_ticks (
   created_at timestamptz default now()
 );
 
-alter table univ3.pool_ticks 
-add constraint pool_ticks__pools_top__fk 
+alter table univ3.pool_ticks
+add constraint pool_ticks__pools_top__fk
 foreign key (pool_id)
 references univ3.pools_top(id);
 
@@ -103,8 +103,8 @@ create table univ3.pool_history (
   created_at timestamptz default now()
 );
 
-alter table univ3.pool_history 
-add constraint pool_history__pools_top__fk 
+alter table univ3.pool_history
+add constraint pool_history__pools_top__fk
 foreign key (pool_id)
 references univ3.pools_top(id);
 
@@ -161,7 +161,7 @@ select
   t.token1_name
 from univ3.pools_top t;
 
-select 
+select
   h.id,
   h.pool_id,
   h.unix_date,
@@ -220,18 +220,18 @@ select
 	tick_index,
 	token0_amount,
 	token1_amount,
-	case 
-		when (token0_amount - token1_amount) >= 0 
+	case
+		when (token0_amount - token1_amount) >= 0
 		then token0_amount - token1_amount
 		else 0
 	end as token0_larger_diff,
-	case 
-		when (token1_amount - token0_amount) >= 0 
+	case
+		when (token1_amount - token0_amount) >= 0
 		then token1_amount - token0_amount
 		else 0
 	end as token1_larger_diff,
-	case 
-		when (token0_amount - token1_amount) >= 0 
+	case
+		when (token0_amount - token1_amount) >= 0
 		then token0_symbol
 		else token1_symbol
 	end as leading_token_amount
@@ -240,7 +240,7 @@ from univ3.vw_history_top_pools;
 -- logic for best match on pool tick prices
 drop view if exists univ3.vw_history_prices_by_tick_range_all;
 create or replace view univ3.vw_history_prices_by_tick_range_all as
-select 
+select
 	pool_id,
 	pool,
 	hist_date,
@@ -248,12 +248,12 @@ select
 	tick_index_range,
 	token0_symbol,
 	token0_price,
-	token0_tick_price, 
+	token0_tick_price,
 	token1_symbol,
 	token1_price,
 	token1_tick_price
 from (
-	select 
+	select
 		pool_id,
 		pool,
 		hist_date,
@@ -265,7 +265,7 @@ from (
 		rank() over (partition by pool_id, hist_date order by match_search1, match_search2, match_search3, tick_index_range) as tick_index_rank,
 		token0_symbol,
 		token0_price,
-		token0_tick_price, 
+		token0_tick_price,
 		token1_symbol,
 		token1_price,
 		token1_tick_price
@@ -283,13 +283,13 @@ from (
 			case when substring(t.tick_index::text,0,length(t.tick_index::text)-1) = substring(h.tick_index::text,0,length(h.tick_index::text)-1) then h.tick_index else null end as match_search3,
 			h.token0_symbol,
 			h.token0_price,
-			case when h.tick_index < 0 then t.constant_price0 * 1000000000000 else t.constant_price1 * 1000000000000 end as token0_tick_price, 
+			case when h.tick_index < 0 then t.constant_price1 / 1000000000000 else t.constant_price1 * 1000000000000 end as token0_tick_price,
 			h.token1_symbol,
 			h.token1_price,
-			case when h.tick_index < 0 then t.constant_price1 / 1000000000000 else t.constant_price0 / 1000000000000 end as token1_tick_price
+			case when h.tick_index < 0 then t.constant_price0 * 1000000000000 else t.constant_price0 / 1000000000000 end as token1_tick_price
 		from univ3.vw_history_top_pools h
-		left join univ3.pool_ticks t 
-			on h.pool_id = t.pool_id 
+		left join univ3.pool_ticks t
+			on h.pool_id = t.pool_id
 			and (
 					t.tick_index::text like substring(h.tick_index::text,0,length(h.tick_index::text)+1) || '%'
 				or 	t.tick_index::text like substring(h.tick_index::text,0,length(h.tick_index::text)) || '%'
