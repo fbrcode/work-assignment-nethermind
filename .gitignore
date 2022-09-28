@@ -1,3 +1,5 @@
 node_modules
 .env
 grafana/grafana/*
+cache/backup
+.vscode
