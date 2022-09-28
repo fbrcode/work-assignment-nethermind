@@ -10,6 +10,14 @@ interface ENV {
   PG_DATABASE: string | undefined;
   PG_PASSWORD: string | undefined;
   PG_PORT: number | undefined;
+  RPC_PROVIDER: string | undefined;
+  ETHERSCAN_ENDPOINT: string | undefined;
+  ETHERSCAN_API_KEY: string | undefined;
+  BLOCK_NUMBER_START: number | undefined;
+  BLOCKS_FETCH_AMOUNT: number | undefined;
+  CACHE_DIRECTORY: string | undefined;
+  TIMESTAMP_PARALLEL_COUNT_FETCH: number | undefined;
+  LOAD_FROM_CACHE: boolean | undefined;
 }
 
 interface Config {
@@ -22,6 +30,14 @@ interface Config {
   PG_DATABASE: string;
   PG_PASSWORD: string;
   PG_PORT: number;
+  RPC_PROVIDER: string;
+  ETHERSCAN_ENDPOINT: string;
+  ETHERSCAN_API_KEY: string;
+  BLOCK_NUMBER_START: number;
+  BLOCKS_FETCH_AMOUNT: number;
+  CACHE_DIRECTORY: string;
+  TIMESTAMP_PARALLEL_COUNT_FETCH: number;
+  LOAD_FROM_CACHE: boolean;
 }
 
 // Loading process.env as ENV interface
@@ -38,6 +54,25 @@ export const getConfig = (): ENV => {
     PG_DATABASE: process.env.PG_DATABASE,
     PG_PASSWORD: process.env.PG_PASSWORD,
     PG_PORT: process.env.PG_PORT ? Number(process.env.PG_PORT) : undefined,
+    RPC_PROVIDER: process.env.RPC_PROVIDER,
+    ETHERSCAN_ENDPOINT: process.env.ETHERSCAN_ENDPOINT,
+    ETHERSCAN_API_KEY: process.env.ETHERSCAN_API_KEY,
+    BLOCK_NUMBER_START: process.env.BLOCK_NUMBER_START
+      ? Number(process.env.BLOCK_NUMBER_START)
+      : undefined,
+    BLOCKS_FETCH_AMOUNT: process.env.BLOCKS_FETCH_AMOUNT
+      ? Number(process.env.BLOCKS_FETCH_AMOUNT)
+      : undefined,
+    CACHE_DIRECTORY: process.env.CACHE_DIRECTORY,
+    TIMESTAMP_PARALLEL_COUNT_FETCH: process.env.TIMESTAMP_PARALLEL_COUNT_FETCH
+      ? Number(process.env.TIMESTAMP_PARALLEL_COUNT_FETCH)
+      : undefined,
+    LOAD_FROM_CACHE: process.env.LOAD_FROM_CACHE
+      ? Boolean(
+          process.env.LOAD_FROM_CACHE.toLocaleUpperCase() === 'TRUE' ||
+            process.env.LOAD_FROM_CACHE.toLocaleUpperCase() === 'YES'
+        )
+      : undefined,
   };
 };
 
