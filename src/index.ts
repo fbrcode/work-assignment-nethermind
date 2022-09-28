@@ -1,6 +1,8 @@
 import { getTopPools, getPoolTicks, getPoolsHistory } from './extract';
 import { clearDbData, addPoolsDb, addPoolTicksDb, addPoolHistoryDb } from './database';
 import { logger } from './logger';
+import { processPoolEvents } from './extractRPC';
+import config from './config';
 
 export async function main() {
   // clear database data
@@ -28,10 +30,13 @@ export async function main() {
     logger.info(`Fetching ticks and history data for pool ${tokens} (${pool.id})...`);
     const poolTicksData = await getPoolTicks(pool.id);
     logger.debug(poolTicksData);
+    await addPoolTicksDb(pool.id, poolTicksData);
     const poolHistoryData = await getPoolsHistory(pool.id);
     logger.debug(poolHistoryData);
-    await addPoolTicksDb(pool.id, poolTicksData);
     await addPoolHistoryDb(pool.id, poolHistoryData);
+    // fetch specific events from RPC or load from cached data
+    logger.info(`Fetching detailed swap events history data for pool ${tokens} (${pool.id})...`);
+    await processPoolEvents(pool.id, true, config.LOAD_FROM_CACHE);
   }
 }
 
