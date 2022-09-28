@@ -9,7 +9,7 @@ query GetTopPools(
       orderBy: totalValueLockedUSD
       orderDirection: desc
       first: $numberOfPools
-      skip: 1
+      skip: 4
   ) {
     id
     feeTier
