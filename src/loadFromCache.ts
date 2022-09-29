@@ -4,20 +4,30 @@ import { readFile, humanNumber } from './utils';
 import { swapHistoryBulkInsert } from './dbStream';
 import { logger } from './logger';
 
-export function cachedEventsExists(poolId: string) {
-  const directory = config.CACHE_DIRECTORY;
-  if (!existsSync(directory)) {
+export function cachedEventsExists(poolId: string): boolean {
+  if (!existsSync(config.CACHE_DIRECTORY)) {
     return false;
   }
-  const fileSourceFullPath = `${directory}/${poolId}-swap-events.json`;
+  const fileSourceFullPath = `${config.CACHE_DIRECTORY}/${poolId}-swap-events.json`;
   return existsSync(fileSourceFullPath);
 }
 
 export async function loadFromCachedData(poolId?: string) {
+  if (!existsSync(config.CACHE_DIRECTORY)) {
+    logger.error(`Cache directory ${config.CACHE_DIRECTORY} does not exist`);
+    return;
+  }
+
   const cachedFiles = readdirSync(config.CACHE_DIRECTORY);
   const eventsCachedFiles = cachedFiles.filter(
     (f) => f.toLocaleLowerCase().startsWith('0x') && f.toLocaleLowerCase().endsWith('events.json')
   );
+
+  if (eventsCachedFiles.length === 0) {
+    logger.error(`Valid files were not found in the directory ${config.CACHE_DIRECTORY}`);
+    return;
+  }
+
   for (const fileSource of eventsCachedFiles) {
     const pool = fileSource.substring(0, fileSource.indexOf('-'));
     logger.info(`Processing pool ${pool}`);
