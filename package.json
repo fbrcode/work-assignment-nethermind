@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "ts-node ./src/index.ts | pino-pretty -i time,hostname,module,__in,name,pid",
     "debug": "LOG_LEVEL=debug ts-node ./src/index.ts | pino-pretty -i time,hostname,module,__in,name,pid",
-    "test": "LOG_LEVEL=silent jest --verbose --detectOpenHandles",
-    "logs": "LOG_LEVEL=info ts-node ./src/getLogs.ts | pino-pretty -i time,hostname,module,__in,name,pid",
+    "test": "LOG_LEVEL=silent jest --verbose",
     "load": "LOG_LEVEL=info ts-node ./src/loadFromCache.ts | pino-pretty -i time,hostname,module,__in,name,pid"
   },
   "devDependencies": {
