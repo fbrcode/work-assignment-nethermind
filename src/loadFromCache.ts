@@ -12,6 +12,23 @@ export function cachedEventsExists(poolId: string): boolean {
   return existsSync(fileSourceFullPath);
 }
 
+export function extractEventsArray(events: any[]) {
+  let eventList = [];
+  events.map((e: any) => {
+    eventList.push({
+      blockNumber: e.blockNumber,
+      timestamp: e.timestamp,
+      txHash: e.transactionHash,
+      amount0: e.data.amount0,
+      amount1: e.data.amount1,
+      tick: e.data.tick,
+      sqrtPriceX96: e.data.sqrtPriceX96,
+    });
+  });
+
+  return eventList;
+}
+
 export async function loadFromCachedData(poolId?: string) {
   if (!existsSync(config.CACHE_DIRECTORY)) {
     logger.error(`Cache directory ${config.CACHE_DIRECTORY} does not exist`);
@@ -36,17 +53,7 @@ export async function loadFromCachedData(poolId?: string) {
     try {
       const data = readFile(fileSourceFullPath);
       const events = JSON.parse(data);
-      let eventList = [];
-      events['EventBody'].map((e: any) => {
-        eventList.push({
-          blockNumber: e.blockNumber,
-          timestamp: e.timestamp,
-          amount0: e.data.amount0,
-          amount1: e.data.amount1,
-          tick: e.data.tick,
-          sqrtPriceX96: e.data.sqrtPriceX96,
-        });
-      });
+      const eventList = extractEventsArray(events['EventBody']);
       logger.debug(`Generated ${humanNumber(eventList.length)} event items to load`);
       // refresh and add data again from cache...
       swapHistoryBulkInsert(pool, eventList);
