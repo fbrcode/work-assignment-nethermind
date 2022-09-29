@@ -305,7 +305,7 @@ create table univ3.swap_history (
   pool_id text,
   block_number integer,
   unix_timestamp integer,
-  hist_timestamp timestamp,
+  hist_timestamp timestamptz,
   transaction_hash text,
   address text,
   sender text,
