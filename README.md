@@ -19,6 +19,8 @@ This is a summary on how the process works:
 2. This data is then loaded in a PostgreSQL schema with some predefined tables to accommodate the data and views to perform certain transformations.
 3. Once this data is in the database, we can view data plotted in [Grafana Open Source](https://grafana.com/oss/) tool on dashboard visualization.
 
+> Note: v2 branch fetches additional blockchain data from RPC provider or a local node to more data history insights.
+
 ## Environment variables
 
 - `LOG_LEVEL` : Logging level for the execution (options = info / debug / silent...)
