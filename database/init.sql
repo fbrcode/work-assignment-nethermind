@@ -299,3 +299,25 @@ from (
 ) y
 where tick_index_rank = 1
 order by pool_id, hist_date, tick_index, tick_index_range;
+
+drop table univ3.swap_history;
+create table univ3.swap_history (
+  pool_id text,
+  block_number integer,
+  unix_timestamp integer,
+  hist_timestamp timestamp,
+  transaction_hash text,
+  amount0 numeric,
+  amount1 numeric,
+  tick numeric,
+  sqrt_price_x96 numeric,
+  created_at timestamptz default now()
+);
+
+alter table univ3.swap_history
+add constraint swap_history__pools_top__fk
+foreign key (pool_id)
+references univ3.pools_top(id);
+
+create index pool_id__block_number__idx
+on univ3.swap_history(pool_id, block_number);
