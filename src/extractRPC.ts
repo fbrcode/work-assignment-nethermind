@@ -5,7 +5,7 @@ import { writeFile } from './utils';
 import { getTimestampsParallel } from './timestamps';
 import { unixDateTimeConverter, humanNumber } from './utils';
 import { swapHistoryBulkInsert } from './dbStream';
-import { loadFromCachedData, cachedEventsExists } from './loadFromCache';
+import { loadFromCachedData, cachedEventsExists, extractEventsArray } from './loadFromCache';
 
 const poolImmutablesAbi = [
   'function factory() external view returns (address)',
@@ -123,8 +123,8 @@ export async function processPoolEvents(
   const poolContract = new ethers.Contract(poolId, poolImmutablesAbi, provider);
   const filterSwap = poolContract.filters.Swap(null);
   const latestBlockNumber = (await provider.getBlock('latest')).number;
-  let eventList = {};
-  eventList = await filterSwapEvents(
+  let events = {};
+  events = await filterSwapEvents(
     poolContract,
     filterSwap,
     config.BLOCK_NUMBER_START,
@@ -136,12 +136,11 @@ export async function processPoolEvents(
   if (performCache) {
     const fileTarget = `${poolId}-swap-events.json`;
     const swapCacheFile = `${config.CACHE_DIRECTORY}/${fileTarget}`;
-    writeFile(config.CACHE_DIRECTORY, swapCacheFile, eventList);
+    writeFile(config.CACHE_DIRECTORY, swapCacheFile, events);
   }
-  logger.info(`Fetched ${eventList['EventBody'].length} swap events.`);
+  logger.info(`Fetched ${events['EventBody'].length} swap events.`);
 
   // streamline events to database
-  console.log('first item after fetching...');
-  console.log(eventList['EventBody'][0]);
-  swapHistoryBulkInsert(poolId, eventList['EventBody']);
+  const eventList = extractEventsArray(events['EventBody']);
+  swapHistoryBulkInsert(poolId, eventList);
 }
