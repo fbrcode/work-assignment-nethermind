@@ -5,7 +5,11 @@ import { swapHistoryBulkInsert } from './dbStream';
 import { logger } from './logger';
 
 export function cachedEventsExists(poolId: string) {
-  const fileSourceFullPath = `${config.CACHE_DIRECTORY}/${poolId}-swap-events.json`;
+  const directory = config.CACHE_DIRECTORY;
+  if (!existsSync(directory)) {
+    return false;
+  }
+  const fileSourceFullPath = `${directory}/${poolId}-swap-events.json`;
   return existsSync(fileSourceFullPath);
 }
 
