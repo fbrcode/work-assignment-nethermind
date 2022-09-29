@@ -17,6 +17,7 @@ export async function clearDbData() {
   const client = getDbClient();
   try {
     await client.connect();
+    await client.query(`delete from univ3.swap_history`);
     await client.query(`delete from univ3.pool_history`);
     await client.query(`delete from univ3.pool_ticks`);
     await client.query(`delete from univ3.pools_top`);
