@@ -32,9 +32,22 @@ export function swapHistoryBulkInsert(poolId: string, dataArray: any[]) {
   pool.connect(function (err, client, done) {
     const stream = client.query(
       pgCopy.from(
-        `COPY ${targetTable} (pool_id, block_number, unix_timestamp, hist_timestamp, transaction_hash, amount0, amount1, tick, sqrt_price_x96) FROM STDIN DELIMITER E'\t' CSV`
+        `COPY ${targetTable} (
+          pool_id, 
+          block_number, 
+          unix_timestamp, 
+          hist_timestamp, 
+          transaction_hash, 
+          address, 
+          sender, 
+          recipient, 
+          amount0, 
+          amount1, 
+          tick, 
+          sqrt_price_x96) FROM STDIN DELIMITER E'\t' CSV`
       )
     );
+
     stream.on('error', (e) => logger.error(e));
     stream.on('finish', done);
     // streamline the data array
@@ -43,7 +56,7 @@ export function swapHistoryBulkInsert(poolId: string, dataArray: any[]) {
       .filter((e) => !!e.timestamp) // skip if timestamp is not found
       .map((d) => {
         const ts = new Date(d.timestamp * 1000).toString().substring(0, 24);
-        const row = `${poolId}\t${d.blockNumber}\t${d.timestamp}\t${ts}\t${d.txHash}\t${d.amount0}\t${d.amount1}\t${d.tick}\t${d.sqrtPriceX96}`;
+        const row = `${poolId}\t${d.blockNumber}\t${d.timestamp}\t${ts}\t${d.txHash}\t${d.address}\t${d.sender}\t${d.recipient}\t${d.amount0}\t${d.amount1}\t${d.tick}\t${d.sqrtPriceX96}`;
         readable.push(row + '\n');
       });
     readable.push(null);
